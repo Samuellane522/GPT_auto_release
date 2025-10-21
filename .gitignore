@@ -3,3 +3,5 @@ beta-release/current/*.zip
 telemetry/*.db
 telemetry/*.db-*
 
+sanity-logs/
+*.log
