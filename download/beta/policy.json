@@ -1,9 +1,10 @@
 {
-  "version": 1,
-  "domainLock": [
-    "chatgpt.com",
-    "openai.com"
-  ],
-  "cspSafe": false,
-  "createdAt": "2025-10-20T21:21:50.716Z"
+  "minBuildId": "",
+  "revokedIds": [],
+  "keyTTLms": 21600000,
+  "graceMs": 900000,
+  "keyEpoch": 0,
+  "nextBootstrapUrl": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
+  "encUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
+  "generatedAt": "2025-10-21T01:14:45.217Z"
 }
