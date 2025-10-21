@@ -1,1 +1,0 @@
-Install optional dep to enable zip: npm i -D archiver

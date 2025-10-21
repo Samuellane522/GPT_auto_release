@@ -1,11 +1,14 @@
 {
   "version": 1,
-  "createdAt": "2025-10-21T10:37:23.936Z",
+  "createdAt": "2025-10-21T12:13:07.949Z",
   "encMode": "remote",
   "publicBase": "https://samuellane522.github.io/GPT_auto_release",
   "downloadPrefix": "/download/beta",
-  "domainLock": [],
-  "cspSafe": false,
+  "domainLock": [
+    "chatgpt.com",
+    "chat.openai.com"
+  ],
+  "cspSafe": true,
   "minBuildId": "",
   "revokedIds": [],
   "encUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
