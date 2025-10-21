@@ -1,0 +1,5 @@
+# Generated artifacts you typically don't commit:
+beta-release/current/*.zip
+telemetry/*.db
+telemetry/*.db-*
+

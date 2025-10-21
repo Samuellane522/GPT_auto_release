@@ -1,0 +1,3 @@
+3db93a80d451f73df0a4a25337f171f37aeb8e50aa40a5e6425ae62923a91a28  beta-release/current/auto-prompter.user.js
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  beta-release/current/pkg/auto-prompter-enc.bin
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  download/beta/auto-prompter-enc.bin

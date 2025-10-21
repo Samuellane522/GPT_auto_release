@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "domainLock": [
+    "chatgpt.com",
+    "openai.com"
+  ],
+  "cspSafe": false,
+  "createdAt": "2025-10-20T21:21:50.716Z"
+}
