@@ -1,12 +1,19 @@
 {
+  "builds": {
+    "03c82e6f2f": {
+      "id": "03c82e6f2f",
+      "ts": 1761091332047
+    }
+  },
+  "latest": "03c82e6f2f",
   "last": {
     "id": "03c82e6f2f",
-    "ts": "2025-10-21T12:13:07.948Z"
+    "ts": "2025-10-21T23:33:46.324Z"
   },
   "files": {
     "currentJSAbs": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/auto-prompter.user.js",
     "currentJSRel": "",
-    "namedAbs": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/2025/10/21/20251021-071307/opt/auto-prompter-2025-10-21-03c82e6f2f-obf.user.js",
+    "namedAbs": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/2025/10/21/20251021-183346/opt/auto-prompter-2025-10-21-03c82e6f2f-obf.user.js",
     "namedRel": "",
     "zipAbs": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/bundle-current.zip",
     "zipRel": "",

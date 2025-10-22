@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "createdAt": "2025-10-21T12:13:07.949Z",
+  "createdAt": "2025-10-22T00:02:12.050Z",
   "encMode": "remote",
   "publicBase": "https://samuellane522.github.io/GPT_auto_release",
   "downloadPrefix": "/download/beta",
@@ -8,13 +8,13 @@
     "chatgpt.com",
     "chat.openai.com"
   ],
-  "cspSafe": true,
+  "cspSafe": false,
   "minBuildId": "",
   "revokedIds": [],
   "encUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
   "nextBootstrapUrl": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
   "integrity": {
-    "boot": "sha256-jIW+kFBFyrhJ3ac6ZAgWdYay71xaVIX6YCpCC1CUrEQ=",
-    "enc": "sha256-Qul9BgJkav8e8R1/hckBzjGHAe2zayxoU4+7AtF5hmE="
+    "boot": "sha256-abgr5NGOHtUwY8E6k+QWckarlDLvgf9JElRlmCsX6hc=",
+    "enc": "sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s="
   }
 }
