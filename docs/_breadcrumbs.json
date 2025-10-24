@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2025-10-24T05:35:20.147Z",
+  "crumbs": [
+    {
+      "t": 0,
+      "level": "step",
+      "msg": "load config",
+      "meta": {}
+    },
+    {
+      "t": 0,
+      "level": "step",
+      "msg": "resolve paths",
+      "meta": {}
+    },
+    {
+      "t": 0,
+      "level": "step",
+      "msg": "compute urls",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "read policy/integrity",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "discover latest id",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "ensure docs dir",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "write manifest",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "step",
+      "msg": "render core pages",
+      "meta": {}
+    },
+    {
+      "t": 3,
+      "level": "step",
+      "msg": "render releases index (if present)",
+      "meta": {}
+    },
+    {
+      "t": 3,
+      "level": "step",
+      "msg": "generate changelog",
+      "meta": {}
+    },
+    {
+      "t": 11,
+      "level": "step",
+      "msg": "ancillary: sitemap/robots + health",
+      "meta": {}
+    },
+    {
+      "t": 13,
+      "level": "step",
+      "msg": "write portfolio + readme mirrors",
+      "meta": {}
+    },
+    {
+      "t": 14,
+      "level": "step",
+      "msg": "snapshot versioned docs",
+      "meta": {}
+    },
+    {
+      "t": 15,
+      "level": "ok",
+      "msg": "wrote docs (build=03c82e6f2f)",
+      "meta": {}
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samuellane522.github.io/GPT_auto_release/docs/sitemap.xml

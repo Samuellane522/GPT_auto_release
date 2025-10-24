@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Release Index</title>
+<meta name="theme-color" content="#3b82f6">
+<meta name="color-scheme" content="light dark">
+<style>
+:root{
+  --fg:#0b1220; --bg:#ffffff; --muted:#667085; --line:#e5e7eb;
+  --primary:#3b82f6; --chip:#f6f8fa; --card:rgba(255,255,255,.72);
+  --grad1:#eef2ff; --grad2:#ecfeff; --code:#0f172a; --code-bg:#f8fafc;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --fg:#e5e7eb; --bg:#0b1220; --muted:#9aa4b2; --line:#1f2937;
+    --chip:#111827; --card:rgba(17,24,39,.6); --grad1:#0b1220; --grad2:#0b1220;
+    --code:#e5e7eb; --code-bg:#0b1220;
+  }
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;margin:0;color:var(--fg);background:linear-gradient(180deg,var(--grad1),var(--grad2))}
+.container{max-width:1024px;margin:0 auto;padding:28px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+h1{font-size:34px;margin:0 0 8px} h2{font-size:22px;margin:24px 0 8px}
+p{margin:10px 0} code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--primary);color:#fff;transition:transform .06s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.secondary{background:transparent;color:var(--primary)}
+.card{border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;background:var(--card);backdrop-filter:saturate(140%) blur(8px)}
+.hero{border:1px solid var(--line);border-radius:20px;padding:22px;margin:12px 0;background:radial-gradient(1200px 400px at 10% -10%, rgba(59,130,246,.20), transparent)}
+.kv{display:grid;grid-template-columns:180px 1fr;gap:8px 14px}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
+.badge{display:inline-block;background:var(--chip);border:1px solid var(--line);padding:4px 10px;border-radius:999px;margin-left:8px}
+.small{color:var(--muted);font-size:12px}
+.table{width:100%;border-collapse:collapse} .table td,.table th{border-top:1px solid var(--line);padding:8px}
+.footer{color:var(--muted);font-size:12px;margin-top:24px}
+.breadcrumbs{font-size:12px;color:var(--muted);margin:6px 0 16px}
+.breadcrumbs a{color:inherit}
+nav.top{display:flex;gap:10px;align-items:center;margin:6px 0 16px}
+nav.top a{padding:6px 10px;border-radius:10px;border:1px solid var(--line);background:transparent}
+pre{background:var(--code-bg);color:var(--code);padding:12px;border-radius:12px;overflow:auto;border:1px solid var(--line)}
+code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid var(--line)}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Release Index <span class="badge">Docs</span></h1>
+      
+    </div>
+    
+  <nav class="top">
+    <a href="./index.html">Home</a>
+    <a href="./install.html">Install</a>
+    <a href="./verify.html">Verify</a>
+    <a href="./releases.html">Releases</a>
+    <a href="./changelog.html">Changelog</a>
+  </nav>
+    <nav class="breadcrumbs"><a href="./index.html">Docs</a> / <a href="./releases.html">Releases</a></nav>
+    
+<div class="card">
+  <h2>Releases</h2>
+  <table class="table">
+    <thead><tr><th>Date</th><th>Version</th><th>Notes</th></tr></thead>
+    <tbody><tr><td colspan="3" class="small">No releases indexed yet.</td></tr></tbody>
+  </table>
+</div>
+    <p class="footer">Built with ❤️ by Auto Prompter — security-first releases, human-friendly UX.</p>
+  </div>
+</body></html>
