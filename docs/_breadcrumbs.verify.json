@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T05:35:22.677Z",
+  "generatedAt": "2025-10-24T06:18:57.354Z",
   "crumbs": [
     {
       "t": 0,
@@ -20,9 +20,174 @@
       "meta": {}
     },
     {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file.index.html",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/index.html"
+      }
+    },
+    {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file.install.html",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/install.html"
+      }
+    },
+    {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file.verify.html",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/verify.html"
+      }
+    },
+    {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file.releases.html",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/releases.html"
+      }
+    },
+    {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file.changelog.html",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/changelog.html"
+      }
+    },
+    {
+      "t": 1,
+      "level": "ok",
+      "msg": "docs.file._data.json",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/_data.json"
+      }
+    },
+    {
       "t": 2,
       "level": "ok",
-      "msg": "docs verified ✅",
+      "msg": "docs.file._health.json",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/_health.json"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.file.sitemap.xml",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/sitemap.xml"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.file.robots.txt",
+      "meta": {
+        "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/robots.txt"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.manifest.present",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.manifest.urls.enc",
+      "meta": {
+        "manifest": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
+        "expected": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.manifest.urls.boot",
+      "meta": {
+        "manifest": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
+        "expected": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.manifest.urls.sums",
+      "meta": {
+        "manifest": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt",
+        "expected": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt"
+      }
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.html.index.hasBOOT",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.html.install.hasBOOT",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.html.index.hasENC",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.html.install.hasENC",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs.html.verify.hasSUMS",
+      "meta": {}
+    },
+    {
+      "t": 3,
+      "level": "ok",
+      "msg": "docs.sums.enc.bin.entry",
+      "meta": {
+        "key": "download/beta/auto-prompter-enc.bin"
+      }
+    },
+    {
+      "t": 3,
+      "level": "ok",
+      "msg": "docs.sums.boot.entry",
+      "meta": {
+        "key": "beta-release/current/boot/auto-prompter-bootstrap.user.js"
+      }
+    },
+    {
+      "t": 3,
+      "level": "ok",
+      "msg": "docs.health.ok",
+      "meta": {}
+    },
+    {
+      "t": 3,
+      "level": "ok",
+      "msg": "docs.versioned.snapshot",
+      "meta": {
+        "vdir": "/Users/samuellane/Documents/GitHub/GPT_auto_release/docs/v/03c82e6f2f"
+      }
+    },
+    {
+      "t": 3,
+      "level": "ok",
+      "msg": "docs verified",
       "meta": {}
     }
   ]
