@@ -1,70 +1,138 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Release Index</title>
-<meta name="theme-color" content="#3b82f6">
+<meta name="theme-color" content="#4361ee">
 <meta name="color-scheme" content="light dark">
+<meta name="description" content="Index of Auto Prompter releases with dates, notes, and links to versioned documentation.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Release Index — Auto Prompter">
+<meta property="og:description" content="Index of Auto Prompter releases with dates, notes, and links to versioned documentation.">
+<meta property="og:url" content="">
+<meta property="og:image" content="/docs/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Release Index — Auto Prompter">
+<meta name="twitter:description" content="Index of Auto Prompter releases with dates, notes, and links to versioned documentation.">
+<meta name="twitter:image" content="/docs/social-card.png">
+<link rel="canonical" href="">
 <style>
 :root{
   --fg:#0b1220; --bg:#ffffff; --muted:#667085; --line:#e5e7eb;
-  --primary:#3b82f6; --chip:#f6f8fa; --card:rgba(255,255,255,.72);
-  --grad1:#eef2ff; --grad2:#ecfeff; --code:#0f172a; --code-bg:#f8fafc;
+  --primary:#4361ee; --chip:#f6f8fa; --card:rgba(255,255,255,.75);
+  --grad1:#f5f7ff; --grad2:#eef7ff; --code:#0f172a; --code-bg:#f8fafc;
+  --ring: rgba(67,97,238,.35); --shadow: 0 10px 30px rgba(2,6,23,.08);
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --fg:#e5e7eb; --bg:#0b1220; --muted:#9aa4b2; --line:#1f2937;
-    --chip:#111827; --card:rgba(17,24,39,.6); --grad1:#0b1220; --grad2:#0b1220;
-    --code:#e5e7eb; --code-bg:#0b1220;
+    --fg:#e8eefc; --bg:#0b1220; --muted:#98a4b9; --line:#1f2937;
+    --chip:#121826; --card:rgba(18,24,38,.6); --grad1:#0b1220; --grad2:#0b1220;
+    --code:#e8eefc; --code-bg:#0b1220; --shadow: 0 10px 30px rgba(0,0,0,.35);
   }
 }
 *{box-sizing:border-box}
-body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;margin:0;color:var(--fg);background:linear-gradient(180deg,var(--grad1),var(--grad2))}
-.container{max-width:1024px;margin:0 auto;padding:28px}
-a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
-h1{font-size:34px;margin:0 0 8px} h2{font-size:22px;margin:24px 0 8px}
-p{margin:10px 0} code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
-.btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--primary);color:#fff;transition:transform .06s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn.secondary{background:transparent;color:var(--primary)}
-.card{border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;background:var(--card);backdrop-filter:saturate(140%) blur(8px)}
-.hero{border:1px solid var(--line);border-radius:20px;padding:22px;margin:12px 0;background:radial-gradient(1200px 400px at 10% -10%, rgba(59,130,246,.20), transparent)}
+html,body{height:100%}
+body{
+  margin:0; color:var(--fg);
+  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Arial;
+  background:
+    radial-gradient(1200px 400px at 5% -10%, rgba(67,97,238,.15), transparent),
+    radial-gradient(1200px 400px at 95% -10%, rgba(16,185,129,.12), transparent),
+    linear-gradient(180deg, var(--grad1), var(--grad2));
+}
+.container{max-width:1080px;margin:0 auto;padding:28px}
+
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:34px;margin:0 0 8px}
+h2{font-size:22px;margin:24px 0 8px}
+p{margin:10px 0}
+code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
+
+.site-header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 0 18px;
+}
+.brand{display:flex; gap:10px; align-items:center; font-weight:700; letter-spacing:.2px}
+.brand .logo{display:inline-flex; width:28px; height:28px; border-radius:10px;
+  background: linear-gradient(135deg, #4361ee, #22c55e); box-shadow: var(--shadow);}
+.top{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.top a{
+  padding:6px 12px; border-radius:12px; border:1px solid var(--line);
+  background:transparent; backdrop-filter:saturate(140%) blur(6px);
+}
+.top a:hover{box-shadow:0 0 0 4px var(--ring)}
+
+.hero{
+  border:1px solid var(--line); border-radius:20px; padding:26px; margin:12px 0 18px;
+  background: radial-gradient(1000px 300px at 10% -10%, rgba(67,97,238,.18), transparent);
+  box-shadow: var(--shadow);
+}
+.badge{
+  display:inline-block;background:var(--chip);border:1px solid var(--line);
+  padding:4px 10px;border-radius:999px;margin-left:8px
+}
+.subtitle{color:var(--muted); font-size:13px; margin:6px 0 0}
+
+nav.top{margin:6px 0 10px}
+.breadcrumbs{font-size:12px;color:var(--muted);margin:6px 0 12px}
+.breadcrumbs a{color:inherit}
+
+.btn{
+  display:inline-block; padding:10px 14px; border-radius:14px;
+  border:1px solid var(--line); background:var(--primary); color:#fff;
+  transition:transform .06s ease, box-shadow .2s ease; box-shadow: var(--shadow)
+}
+.btn:hover{transform:translateY(-1px); box-shadow: 0 12px 30px rgba(67,97,238,.25)}
+.btn.secondary{background:transparent; color:var(--primary)}
+
+.card{
+  border:1px solid var(--line); border-radius:18px; padding:16px; margin:14px 0;
+  background:var(--card); backdrop-filter:saturate(150%) blur(10px); box-shadow: var(--shadow)
+}
 .kv{display:grid;grid-template-columns:180px 1fr;gap:8px 14px}
 .mono{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
-.badge{display:inline-block;background:var(--chip);border:1px solid var(--line);padding:4px 10px;border-radius:999px;margin-left:8px}
 .small{color:var(--muted);font-size:12px}
-.table{width:100%;border-collapse:collapse} .table td,.table th{border-top:1px solid var(--line);padding:8px}
-.footer{color:var(--muted);font-size:12px;margin-top:24px}
-.breadcrumbs{font-size:12px;color:var(--muted);margin:6px 0 16px}
-.breadcrumbs a{color:inherit}
-nav.top{display:flex;gap:10px;align-items:center;margin:6px 0 16px}
-nav.top a{padding:6px 10px;border-radius:10px;border:1px solid var(--line);background:transparent}
-pre{background:var(--code-bg);color:var(--code);padding:12px;border-radius:12px;overflow:auto;border:1px solid var(--line)}
+
+.table{width:100%;border-collapse:collapse; overflow:hidden; border-radius:14px}
+.table thead th{background:rgba(67,97,238,.06)}
+.table td,.table th{border-top:1px solid var(--line);padding:10px}
+.table tr:nth-child(even){background:rgba(2,6,23,.02)}
+pre{
+  background:var(--code-bg);color:var(--code);padding:12px;border-radius:12px;
+  overflow:auto;border:1px solid var(--line)
+}
 code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid var(--line)}
+.footer{color:var(--muted);font-size:12px;margin-top:26px}
 </style>
 
 </head>
 <body>
   <div class="container">
-    <div class="hero">
-      <h1>Release Index <span class="badge">Docs</span></h1>
+    <header class="site-header">
       
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <span>Auto Prompter</span>
     </div>
-    
-  <nav class="top">
-    <a href="./index.html">Home</a>
-    <a href="./install.html">Install</a>
-    <a href="./verify.html">Verify</a>
-    <a href="./releases.html">Releases</a>
-    <a href="./changelog.html">Changelog</a>
-  </nav>
+  
+      <nav class="top"><a href="./index.html">Home</a><a href="./install.html">Install</a><a href="./verify.html">Verify</a><a href="./releases.html">Releases</a><a href="./changelog.html">Changelog</a></nav>
+    </header>
+
+    <section class="hero">
+      <h1>Release Index <span class="badge">Docs</span></h1>
+      <p class="subtitle">Browse versioned docs snapshots and notes</p>
+    </section>
+
     <nav class="breadcrumbs"><a href="./index.html">Docs</a> / <a href="./releases.html">Releases</a></nav>
-    
+    <main>
 <div class="card">
   <h2>Releases</h2>
+  <p class="small">No releases indexed yet.</p>
   <table class="table">
     <thead><tr><th>Date</th><th>Version</th><th>Notes</th></tr></thead>
-    <tbody><tr><td colspan="3" class="small">No releases indexed yet.</td></tr></tbody>
+    <tbody><tr><td colspan="3" class="small">—</td></tr></tbody>
   </table>
-</div>
-    <p class="footer">Built with ❤️ by Auto Prompter — security-first releases, human-friendly UX.</p>
+</div></main>
+
+    <footer class="footer">Built with ❤️ by Auto Prompter — security-first releases, human-friendly UX.</footer>
   </div>
 </body></html>
