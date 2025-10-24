@@ -111,53 +111,22 @@ p{margin:10px 0}
 /* ==========================================================================
    Layout
    ========================================================================== */
-.container{
-  max-width:var(--container);
-  margin:0 auto;
-  padding: var(--gutter);
-}
-
-.site-header{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:10px 0 18px;
-}
-
-.brand{
-  display:flex; gap:10px; align-items:center; font-weight:700; letter-spacing:.2px
-}
-.brand .logo{
-  display:inline-flex; width:28px; height:28px; border-radius:10px;
-  background: linear-gradient(135deg, #4361ee, #22c55e);
-  box-shadow: var(--shadow);
-}
-
+.container{ max-width:var(--container); margin:0 auto; padding: var(--gutter) }
+.site-header{ display:flex; align-items:center; justify-content:space-between; padding:10px 0 18px }
+.brand{ display:flex; gap:10px; align-items:center; font-weight:700; letter-spacing:.2px }
+.brand .logo-img{ width:28px; height:28px; border-radius:10px; box-shadow: var(--shadow) }
 /* Top navigation */
 .top{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-.top a{
-  padding:6px 12px; border-radius:12px; border:1px solid var(--line);
-  background:transparent; backdrop-filter:saturate(140%) blur(6px);
-}
-@supports not (backdrop-filter: blur(6px)){
-  .top a{ background: transparent }
-}
+.top a{ padding:6px 12px; border-radius:12px; border:1px solid var(--line); background:transparent; backdrop-filter:saturate(140%) blur(6px) }
+@supports not (backdrop-filter: blur(6px)){ .top a{ background: transparent } }
 .top a:hover{box-shadow:0 0 0 4px var(--ring)}
 nav.top{margin:6px 0 10px}
-
 .breadcrumbs{font-size:var(--step--1);color:var(--muted);margin:6px 0 12px}
 .breadcrumbs a{color:inherit}
-
 /* Hero */
-.hero{
-  border:1px solid var(--line); border-radius:var(--radius-lg);
-  padding: clamp(18px, 2.2vw, 26px); margin:12px 0 18px;
-  background: radial-gradient(1000px 300px at 10% -10%, rgba(67,97,238,.18), transparent);
-  box-shadow: var(--shadow);
-}
+.hero{ border:1px solid var(--line); border-radius:var(--radius-lg); padding: clamp(18px, 2.2vw, 26px); margin:12px 0 18px; background: radial-gradient(1000px 300px at 10% -10%, rgba(67,97,238,.18), transparent); box-shadow: var(--shadow) }
 .subtitle{color:var(--muted); font-size:var(--step--1); margin:6px 0 0}
-.badge{
-  display:inline-block;background:var(--chip);border:1px solid var(--line);
-  padding:4px 10px;border-radius:999px;margin-left:8px
-}
+.badge{ display:inline-block;background:var(--chip);border:1px solid var(--line); padding:4px 10px;border-radius:999px;margin-left:8px }
 
 
 /* ==========================================================================
@@ -408,7 +377,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
     <header class="site-header">
       
     <div class="brand">
-      <span class="logo" aria-hidden="true"></span>
+      <img class="logo-img" src="./assets/logo.svg" alt="Auto Prompter logo" width="28" height="28"/>
       <span>Auto Prompter</span>
     </div>
   
@@ -438,53 +407,19 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
   <a href="#top" id="toTop" class="btn to-top">Top</a>
   <script>
 (function(){
-  // Respect stored preference or system default
-  const key = 'ap-theme';
-  const stored = localStorage.getItem(key);
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initial = stored || (prefersDark ? 'dark' : 'light');
+  const key='ap-theme';
+  const stored=localStorage.getItem(key);
+  const prefersDark=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial=stored || (prefersDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', initial);
-
-  function setTheme(t){
-    document.documentElement.setAttribute('data-theme', t);
-    localStorage.setItem(key, t);
-    const label = document.getElementById('themeLabel');
-    if(label) label.textContent = t === 'dark' ? 'Dark' : 'Light';
-  }
-
-  window.__AP_THEME__ = { setTheme };
-
-  window.addEventListener('DOMContentLoaded', function(){
-    const btn = document.getElementById('themeToggle');
-    const label = document.getElementById('themeLabel');
-    if(label) label.textContent = initial === 'dark' ? 'Dark' : 'Light';
-    btn && btn.addEventListener('click', function(){
-      const cur = document.documentElement.getAttribute('data-theme') || 'light';
-      setTheme(cur === 'light' ? 'dark' : 'light');
-    });
-
-    const toTop = document.getElementById('toTop');
-    if(toTop){
-      window.addEventListener('scroll', function(){
-        if(window.scrollY > 320) toTop.classList.add('show'); else toTop.classList.remove('show');
-      });
-      toTop.addEventListener('click', function(e){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
-    }
-
-    // Attach copy buttons to <pre data-copyable>
-    document.querySelectorAll('pre[data-copyable]').forEach(function(pre){
-      const btn = document.createElement('button');
-      btn.className = 'copy-btn';
-      btn.type = 'button';
-      btn.textContent = 'Copy';
-      btn.addEventListener('click', async function(){
-        try{
-          await navigator.clipboard.writeText(pre.textContent || '');
-          const old = btn.textContent; btn.textContent = 'Copied!'; setTimeout(()=>btn.textContent=old, 900);
-        }catch{}
-      });
-      pre.appendChild(btn);
-    });
+  function setTheme(t){ document.documentElement.setAttribute('data-theme', t); localStorage.setItem(key,t); var label=document.getElementById('themeLabel'); if(label) label.textContent=t==='dark'?'Dark':'Light'; }
+  window.__AP_THEME__={ setTheme };
+  window.addEventListener('DOMContentLoaded',function(){
+    var btn=document.getElementById('themeToggle'); var label=document.getElementById('themeLabel'); if(label) label.textContent=initial==='dark'?'Dark':'Light';
+    btn && btn.addEventListener('click',function(){ var cur=document.documentElement.getAttribute('data-theme')||'light'; setTheme(cur==='light'?'dark':'light'); });
+    var toTop=document.getElementById('toTop');
+    if(toTop){ window.addEventListener('scroll',function(){ if(window.scrollY>320) toTop.classList.add('show'); else toTop.classList.remove('show'); }); toTop.addEventListener('click',function(e){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); }); }
+    document.querySelectorAll('pre[data-copyable]').forEach(function(pre){ var btn=document.createElement('button'); btn.className='copy-btn'; btn.type='button'; btn.textContent='Copy'; btn.addEventListener('click',async function(){ try{ await navigator.clipboard.writeText(pre.textContent||''); var old=btn.textContent; btn.textContent='Copied!'; setTimeout(function(){btn.textContent=old;},900); }catch{} }); pre.appendChild(btn); });
   });
 })();
 </script>

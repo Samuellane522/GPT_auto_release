@@ -1,7 +1,8 @@
-<h1 align="center">Auto Prompter <code>undefined</code></h1>
+<p align="center"><img alt="Auto Prompter logo" src="https://samuellane522.github.io/GPT_auto_release/assets/logo.svg" width="80" height="80"/></p>
+<h1 align="center">Auto Prompter <code>03c82e6f2f</code></h1>
 <p align="center"><em>Security-first userscript delivery with encrypted bundles, SRI policy, versioned docs, and one-click install.</em></p>
 <p align="center">
-  <img alt="build" src="https://img.shields.io/badge/build-undefined-0a84ff?style=flat&logo=github" />
+  <img alt="build" src="https://img.shields.io/badge/build-03c82e6f2f-0a84ff?style=flat&logo=github" />
   <a href="https://samuellane522.github.io/GPT_auto_release/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a>
   <a href="https://samuellane522.github.io/GPT_auto_release/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a>
   <img alt="license" src="https://img.shields.io/badge/license-MIT-informational?style=flat" />
@@ -14,7 +15,7 @@
 
 [Docs](https://samuellane522.github.io/GPT_auto_release/) · [Install](https://samuellane522.github.io/GPT_auto_release/install.html) · [Verify](https://samuellane522.github.io/GPT_auto_release/verify.html) · [Releases](https://samuellane522.github.io/GPT_auto_release/releases.html) · [Changelog](https://samuellane522.github.io/GPT_auto_release/changelog.html)
 
-> Latest build: `undefined`
+> Latest build: `03c82e6f2f`
 
 ## Quick Start
 1. Install **Tampermonkey** (Chrome / Edge / Firefox).
@@ -24,17 +25,17 @@
 <details>
 <summary><strong>Verify before install</strong> (checksums + SRI policy)</summary>
 
-- Checksums: [checksums.txt](undefined)
+- Checksums: [checksums.txt]()
 - Policy (SRI): [policy.json](https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json)
 
 **enc.bin SRI**
 ```
-
+sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=
 ```
 
 **CLI**
 ```bash
-curl -sSfL undefined | sed -n '1,60p'
+curl -sSfL  | sed -n '1,60p'
 ```
 </details>
 
@@ -50,21 +51,32 @@ curl -sSfL undefined | sed -n '1,60p'
 | --- | --- |
 | Encrypted bundle (enc.bin) | [download](https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin) |
 | Bootstrap userscript | [install](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js) |
-| Checksums | [checksums.txt](undefined) |
-| Key | [key.json](undefined) |
+| Checksums | [checksums.txt]() |
+| Key | [key.json]() |
 | Docs (latest) | [site root](https://samuellane522.github.io/GPT_auto_release/) |
-| Docs (build undefined) | [versioned index](https://samuellane522.github.io/GPT_auto_release/v/undefined/index.html) |
+| Docs (build 03c82e6f2f) | [versioned index](https://samuellane522.github.io/GPT_auto_release/v/03c82e6f2f/index.html) |
 
 ## Architecture
 ```mermaid
+%%{init: { 'theme': 'base', 'flowchart': { 'htmlLabels': true, 'curve': 'linear' } }}%%
 flowchart LR
   User((User)) -->|Installs| Bootstrap[Bootstrap userscript]
-  Bootstrap --> Policy[policy.json (SRI)]
+  Bootstrap --> Policy[policy.json SRI]
   Bootstrap --> Enc[enc.bin (encrypted)]
   Policy --> Verify[Checksums verify]
-  Enc --> Decrypt[Decrypt + Load]
+  Enc --> Decrypt[Decrypt & Load]
   Decrypt --> App[Auto Prompter]
 ```
+
+<details>
+<summary><strong>Text fallback</strong> (if Mermaid fails to render)</summary>
+
+```text
+User -> Bootstrap userscript -> {policy.json SRI, enc.bin}
+policy.json -> verify checksums
+enc.bin -> decrypt & load -> Auto Prompter
+```
+</details>
 
 ## Changelog
 See: https://samuellane522.github.io/GPT_auto_release/changelog.html

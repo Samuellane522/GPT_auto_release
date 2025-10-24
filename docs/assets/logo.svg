@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Auto Prompter logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4361EE"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="url(#g)"/>
+  <!-- A -->
+  <path d="M20 44 L32 20 L44 44" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24.5 36 H39.5" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <!-- P (stem + bowl) -->
+  <path d="M22 45 V27" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M22 27 H34.5 a7.5 7.5 0 0 1 0 15 H29" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
