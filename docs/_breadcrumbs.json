@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T06:32:39.146Z",
+  "generatedAt": "2025-10-24T07:06:43.809Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,19 +8,19 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "compute urls",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
@@ -56,31 +56,31 @@
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 10,
+      "t": 12,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health",
       "meta": {}
     },
     {
-      "t": 12,
+      "t": 14,
       "level": "step",
       "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 15,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 14,
+      "t": 16,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}
