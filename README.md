@@ -58,23 +58,22 @@ curl -sSfL  | sed -n '1,60p'
 
 ## Architecture
 ```mermaid
-%%{init: { 'theme': 'base', 'flowchart': { 'htmlLabels': true, 'curve': 'linear' } }}%%
 flowchart LR
-  User((User)) -->|Installs| Bootstrap[Bootstrap userscript]
-  Bootstrap --> Policy[policy.json SRI]
-  Bootstrap --> Enc[enc.bin (encrypted)]
-  Policy --> Verify[Checksums verify]
-  Enc --> Decrypt[Decrypt & Load]
-  Decrypt --> App[Auto Prompter]
+  User((User)) -->|Installs| Bootstrap["Bootstrap userscript"];
+  Bootstrap --> Policy["policy.json SRI"];
+  Bootstrap --> Enc["enc.bin - encrypted"];
+  Policy --> Verify["Checksums verify"];
+  Enc --> Decrypt["Decrypt & Load"];
+  Decrypt --> App["Auto Prompter"];
 ```
 
 <details>
 <summary><strong>Text fallback</strong> (if Mermaid fails to render)</summary>
 
 ```text
-User -> Bootstrap userscript -> {policy.json SRI, enc.bin}
-policy.json -> verify checksums
-enc.bin -> decrypt & load -> Auto Prompter
+User -> Bootstrap userscript -> {policy.json SRI, enc.bin - encrypted}
+policy.json SRI -> verify checksums
+enc.bin - encrypted -> decrypt & load -> Auto Prompter
 ```
 </details>
 
