@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2025-10-24T05:35:22.677Z",
+  "crumbs": [
+    {
+      "t": 0,
+      "level": "step",
+      "msg": "load config",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "resolve paths",
+      "meta": {}
+    },
+    {
+      "t": 1,
+      "level": "step",
+      "msg": "soft verify",
+      "meta": {}
+    },
+    {
+      "t": 2,
+      "level": "ok",
+      "msg": "docs verified ✅",
+      "meta": {}
+    }
+  ]
+}
