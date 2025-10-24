@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T05:35:20.147Z",
+  "generatedAt": "2025-10-24T06:15:24.280Z",
   "crumbs": [
     {
       "t": 0,
@@ -20,67 +20,67 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "ensure docs dir",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "write manifest",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 11,
+      "t": 10,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 12,
       "level": "step",
-      "msg": "write portfolio + readme mirrors",
+      "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 14,
+      "t": 13,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 14,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}
