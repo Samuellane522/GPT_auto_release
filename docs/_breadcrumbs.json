@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T07:21:41.495Z",
+  "generatedAt": "2025-10-24T07:24:45.070Z",
   "crumbs": [
     {
       "t": 0,
@@ -26,7 +26,7 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
@@ -62,25 +62,25 @@
       "meta": {}
     },
     {
-      "t": 11,
+      "t": 13,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 15,
       "level": "step",
       "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 14,
+      "t": 17,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 16,
+      "t": 18,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}
