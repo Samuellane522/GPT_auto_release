@@ -1,1 +1,1 @@
-Sitemap: https://samuellane522.github.io/GPT_auto_release/docs/sitemap.xml
+Sitemap: https://samuellane522.github.io/GPT_auto_release/sitemap.xml

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T08:10:14.074Z",
+  "generatedAt": "2025-10-24T08:20:34.485Z",
   "crumbs": [
     {
       "t": 0,
@@ -26,61 +26,61 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "ensure docs dir",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "write manifest",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 4,
+      "t": 3,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 12,
+      "t": 10,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health",
       "meta": {}
     },
     {
-      "t": 14,
+      "t": 11,
       "level": "step",
       "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 13,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 16,
+      "t": 14,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}

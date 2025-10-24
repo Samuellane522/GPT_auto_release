@@ -1,15 +1,16 @@
 <div align="center">
-<h1>Auto Prompter</h1>
+<h1>Auto Prompter <sub><code>03c82e6f2f</code></sub></h1>
 <p><em>Security-first userscript delivery with encrypted bundles, SRI policy, versioned docs, and one-click install.</em></p>
 <p>
 <img alt="build" src="https://img.shields.io/badge/build-03c82e6f2f-0a84ff?style=flat&logo=github" /> 
-<a href="https://samuellane522.github.io/GPT_auto_release/docs/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a> 
-<a href="https://samuellane522.github.io/GPT_auto_release/docs/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a> 
+<a href="https://samuellane522.github.io/GPT_auto_release/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a> 
+<a href="https://samuellane522.github.io/GPT_auto_release/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a> 
 <img alt="license" src="https://img.shields.io/badge/license-MIT-informational?style=flat" /> 
 <img alt="status" src="https://img.shields.io/badge/status-beta-ffb020?style=flat" />
 </p>
 [![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Click-0a84ff?style=for-the-badge)](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js)
 </div>
+[Docs](https://samuellane522.github.io/GPT_auto_release/) · [Install](https://samuellane522.github.io/GPT_auto_release/install.html) · [Verify](https://samuellane522.github.io/GPT_auto_release/verify.html) · [Releases](https://samuellane522.github.io/GPT_auto_release/releases.html) · [Changelog](https://samuellane522.github.io/GPT_auto_release/changelog.html)
 > Latest build: `03c82e6f2f`
 ## Quick Start
 1. Install **Tampermonkey** (Chrome / Edge / Firefox).
@@ -46,8 +47,8 @@ EOF
 | Bootstrap userscript | `https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js` |
 | Checksums | `https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt` |
 | Key | `https://samuellane522.github.io/GPT_auto_release/download/beta/key.json` |
-| Docs (latest) | `https://samuellane522.github.io/GPT_auto_release/docs/` |
-| Docs (build 03c82e6f2f) | `https://samuellane522.github.io/GPT_auto_release/docs/v/03c82e6f2f/index.html` |
+| Docs (latest) | `https://samuellane522.github.io/GPT_auto_release/` |
+| Docs (build 03c82e6f2f) | `https://samuellane522.github.io/GPT_auto_release/v/03c82e6f2f/index.html` |
 ## Architecture
 ```mermaid
 flowchart LR
@@ -59,7 +60,7 @@ flowchart LR
   Decrypt --> App[Auto Prompter]
 ```
 ## Changelog
-See: https://samuellane522.github.io/GPT_auto_release/docs/changelog.html
+See: https://samuellane522.github.io/GPT_auto_release/changelog.html
 ## Troubleshooting
 - If Tampermonkey doesn’t prompt on install, ensure userscripts are enabled in your browser.
 - Corporate proxies may block GitHub Pages; download artifacts and install offline if needed.
