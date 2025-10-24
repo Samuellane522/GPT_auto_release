@@ -51,6 +51,7 @@
   --step-4: clamp(34px, 4vw, 40px);
 }
 
+/* System dark (fallback when no manual toggle) */
 @media (prefers-color-scheme: dark){
   :root{
     --fg:#e8eefc; --bg:#0b1220; --muted:#98a4b9; --line:#1f2937;
@@ -58,6 +59,14 @@
     --code:#e8eefc; --code-bg:#0b1220; --shadow: 0 10px 30px rgba(0,0,0,.35);
   }
 }
+
+/* Manual toggle via <html data-theme="dark"> */
+:root[data-theme="dark"]{
+  --fg:#e8eefc; --bg:#0b1220; --muted:#98a4b9; --line:#1f2937;
+  --chip:#121826; --card:rgba(18,24,38,.6); --grad1:#0b1220; --grad2:#0b1220;
+  --code:#e8eefc; --code-bg:#0b1220; --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
 
 /* ==========================================================================
    Base & Resets
@@ -90,12 +99,13 @@ img{max-width:100%; height:auto;}
 a{color:var(--primary);text-decoration:underline dotted; text-underline-offset:3px}
 a:hover{text-decoration:underline}
 
-/* Selection of headings & paragraphs */
+/* Headings & paragraphs */
 h1,h2,h3{line-height:1.25}
 h1{font-size:var(--step-4); margin:0 0 var(--space-2)}
 h2{font-size:var(--step-2); margin:var(--space-4) 0 var(--space-2)}
 h3{font-size:var(--step-1); margin:var(--space-3) 0 var(--space-1)}
 p{margin:10px 0}
+
 
 /* ==========================================================================
    Layout
@@ -148,6 +158,7 @@ nav.top{margin:6px 0 10px}
   padding:4px 10px;border-radius:999px;margin-left:8px
 }
 
+
 /* ==========================================================================
    Components
    ========================================================================== */
@@ -169,6 +180,19 @@ nav.top{margin:6px 0 10px}
 .btn.sm{ padding:7px 10px; border-radius:var(--radius-sm); font-size:var(--step--1) }
 .btn.lg{ padding:14px 18px; border-radius:var(--radius-lg); font-size:var(--step-0) }
 
+/* Theme toggle & To-top */
+.theme-toggle{
+  padding:6px 10px; border-radius:12px; border:1px solid var(--line);
+  background:var(--chip); color:var(--fg); cursor:pointer;
+}
+.theme-toggle:hover{box-shadow:0 0 0 4px var(--ring)}
+.to-top{
+  position:fixed; right:18px; bottom:18px; opacity:0; pointer-events:none;
+  transition: opacity .2s ease, transform .2s ease; transform: translateY(8px);
+}
+.to-top.show{ opacity:1; pointer-events:auto; transform: translateY(0) }
+
+/* Cards */
 .card{
   border:1px solid var(--line); border-radius:18px;
   padding: clamp(14px, 2vw, 18px); margin:14px 0;
@@ -181,6 +205,7 @@ nav.top{margin:6px 0 10px}
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+/* Key/Value grid */
 .kv{display:grid;grid-template-columns:180px 1fr;gap:8px 14px}
 .mono{font-family:var(--font-mono)}
 .small{color:var(--muted);font-size:var(--step--1)}
@@ -203,7 +228,7 @@ nav.top{margin:6px 0 10px}
   border:1px solid var(--line); font-size:var(--step--1);
 }
 
-/* Metrics (nice for quick stats) */
+/* Metrics */
 .metric{
   display:flex; flex-direction:column; gap:2px;
   padding:12px; border-radius:14px; border:1px solid var(--line);
@@ -221,11 +246,19 @@ nav.top{margin:6px 0 10px}
 .table.striped tbody tr:nth-child(odd){background:rgba(2,6,23,.04)}
 .table-wrap{overflow:auto; border:1px solid var(--line); border-radius:14px}
 
-/* Code */
+/* Code blocks (+copy button) */
 pre{
   background:var(--code-bg); color:var(--code); padding:12px; border-radius:12px;
   overflow:auto; border:1px solid var(--line); position:relative
 }
+pre .copy-btn{
+  position:absolute; top:8px; right:8px;
+  font:inherit; font-size:var(--step--1);
+  padding:4px 8px; border-radius:10px; border:1px solid var(--line);
+  background:var(--chip); cursor:pointer;
+}
+pre .copy-btn:hover{ box-shadow:0 0 0 3px var(--ring) }
+
 code{
   background:var(--chip); padding:2px 6px; border-radius:8px; border:1px solid var(--line);
   font-family:var(--font-mono)
@@ -241,6 +274,7 @@ details[open]{box-shadow: var(--shadow)}
 
 /* Footer */
 .footer{color:var(--muted);font-size:var(--step--1);margin-top:26px}
+
 
 /* ==========================================================================
    Typography & Prose (for <main> and .md markdown containers)
@@ -301,6 +335,7 @@ main li, .md li{ margin:4px 0 }
   padding:2px 6px; border-radius:8px; border:1px solid var(--line)
 }
 
+
 /* ==========================================================================
    Forms
    ========================================================================== */
@@ -314,6 +349,7 @@ input, select, textarea{
 input:focus-visible, select:focus-visible, textarea:focus-visible{
   box-shadow:0 0 0 4px var(--ring);
 }
+
 
 /* ==========================================================================
    Utilities
@@ -331,6 +367,11 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
   overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
 }
 
+
+/* ==========================================================================
+   Media Queries (responsive, motion, contrast, print)
+   ========================================================================== */
+
 /* Responsive tweaks */
 @media (max-width: 980px){
   .kv{grid-template-columns:160px 1fr}
@@ -342,7 +383,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
   h1{font-size: clamp(28px, 6vw, 34px)}
 }
 
-/* Respect reduced motion & high contrast */
+/* Reduced motion & high contrast */
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important; transition:none !important}
 }
@@ -350,6 +391,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
   :root{ --ring: var(--ring-strong) }
   a{ text-decoration: underline }
 }
+
+/* Print */
 @media print{
   body{ background:#fff }
   .hero, .top, .breadcrumbs{ box-shadow:none; background:transparent }
