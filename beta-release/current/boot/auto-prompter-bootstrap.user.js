@@ -634,4 +634,4 @@
     );
   } catch (_) {}
 })();
-// __AP_BOOT {"encUrl":"https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin","encSri":"sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s=","id":"03c82e6f2f","ts":"2025-10-23T06:19:19.779Z"}
+// __AP_BOOT {"encUrl":"https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin","encSri":"sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s=","id":"03c82e6f2f","ts":"2025-10-23T22:06:31.121Z"}
