@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T06:18:52.914Z",
+  "generatedAt": "2025-10-24T06:32:39.146Z",
   "crumbs": [
     {
       "t": 0,
@@ -50,7 +50,7 @@
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}

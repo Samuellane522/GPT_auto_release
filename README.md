@@ -1,42 +1,59 @@
-# Auto Prompter
-![build](https://img.shields.io/badge/build-03c82e6f2f-3b82f6?style=flat&logo=github) [![docs](https://img.shields.io/badge/docs-online-22c55e?style=flat)](https://samuellane522.github.io/GPT_auto_release/docs/) [![verify](https://img.shields.io/badge/verify-checksums-0ea5e9?style=flat)](https://samuellane522.github.io/GPT_auto_release/docs/verify.html)
-Security-first userscript delivery with encrypted bundles, integrity (SRI), and versioned docs. One-click install, zero-trust verify.
-> **Latest build:** `03c82e6f2f`
+<div align="center">
+<h1>Auto Prompter</h1>
+<p>Security-first userscript delivery with encrypted bundles, SRI policy, versioned docs, and one-click install.</p>
+<p>
+<img alt="build" src="https://img.shields.io/badge/build-03c82e6f2f-0a84ff?style=flat&logo=github" />
+&nbsp; <a href="https://samuellane522.github.io/GPT_auto_release/docs/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a>
+&nbsp; <a href="https://samuellane522.github.io/GPT_auto_release/docs/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a>
+&nbsp; <img alt="license" src="https://img.shields.io/badge/license-MIT-informational?style=flat" />
+</p>
+</div>
+> Latest build: `03c82e6f2f`
 ## Quick Start
-1. Install **Tampermonkey** (Chrome/Edge/Firefox).
-2. Click the button below to install the bootstrap userscript (Tampermonkey will prompt you):
-[Install bootstrap.user.js](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js)
-Once installed, refresh ChatGPT — the bootstrap fetches and decrypts your encrypted bundle automatically.
-## Verify a Release
-Prefer “trust but verify”? We publish checksums and an integrity policy.
-- **Checksums:** https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt
-- **Policy (SRI):** https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json
+1) Install **Tampermonkey** (Chrome/Edge/Firefox).
+2) [![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Click-0a84ff?style=for-the-badge)](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js)
+3) Refresh ChatGPT — the bootstrap fetches & decrypts the encrypted bundle automatically.
+<details>
+<summary><strong>Prefer to verify first?</strong></summary>
+- Checksums: https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt
+- Policy (SRI): https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json
 **enc.bin SRI** (from policy):
 ```text
 sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=
 ```
-**CLI snippet:**
+**CLI**
 ```bash
-# Fetch checksums
-curl -sSfL https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt | sed -n '1,50p'
-# (Optional) Verify entries present
+# Fetch checksums list
+curl -sSfL https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt | sed -n '1,60p'
+# Confirm expected paths exist in the list
 grep -E 'download/beta/auto-prompter-enc.bin|beta-release/current/boot/auto-prompter-bootstrap.user.js' <<'EOF'
 $(curl -sSfL https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt)
 EOF
 ```
-Or use the hosted page: **https://samuellane522.github.io/GPT_auto_release/docs/verify.html**
+</details>
 ## Release Artifacts
-- Encrypted bundle: `https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin`
-- Bootstrap userscript: `https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js`
-- Checksums: `https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt`
-- Key: `https://samuellane522.github.io/GPT_auto_release/download/beta/key.json`
-- Docs: `https://samuellane522.github.io/GPT_auto_release/docs/`
-- Versioned docs (this build): `https://samuellane522.github.io/GPT_auto_release/docs/v/03c82e6f2f/index.html`
-## What this project demonstrates
-- 🔐 **Security-first pipeline** — encrypted bundle + integrity (SRI) with human-verifiable checksums.
-- 🚀 **One-click install** — tiny bootstrap userscript that fetches & decrypts your release.
-- 🧪 **Sanity + logs** — shipping scripts tail logs and assert golden signals (`"event":"ok"`).
-- 📚 **Versioned docs** — Pages site auto-generated on each ship with release snapshots.
-- 🧾 **Changelog automation** — conventional commits parsed into a clear, skimmable history.
+| Artifact | URL |
+| --- | --- |
+| Encrypted bundle | `https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin` |
+| Bootstrap userscript | `https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js` |
+| Checksums | `https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt` |
+| Key | `https://samuellane522.github.io/GPT_auto_release/download/beta/key.json` |
+| Docs (latest) | `https://samuellane522.github.io/GPT_auto_release/docs/` |
+| Docs (build 03c82e6f2f) | `https://samuellane522.github.io/GPT_auto_release/docs/v/03c82e6f2f/index.html` |
+## How it Works
+```mermaid
+flowchart LR
+  User((User)) -->|Installs| Bootstrap[Bootstrap userscript]
+  Bootstrap --> Policy[policy.json (SRI)]
+  Bootstrap --> Enc[enc.bin (encrypted)]
+  Policy --> Verify[Checksums verify]
+  Enc --> Decrypt[Decrypt + Load]
+  Decrypt --> App[Auto Prompter]
+```
 ## Changelog
-See **https://samuellane522.github.io/GPT_auto_release/docs/changelog.html**
+See: https://samuellane522.github.io/GPT_auto_release/docs/changelog.html
+## Troubleshooting
+- If Tampermonkey doesn’t prompt on install, ensure userscripts are enabled in your browser.
+- Corporate proxies may block GitHub Pages; download artifacts and install offline if needed.
+---
+Generated by the release pipeline.
