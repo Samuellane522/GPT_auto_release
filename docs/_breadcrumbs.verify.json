@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T21:52:08.545Z",
+  "generatedAt": "2025-10-24T22:00:57.992Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,7 +8,7 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
@@ -171,13 +171,13 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.health.ok",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.versioned.snapshot",
       "meta": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}
