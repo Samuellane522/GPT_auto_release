@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T07:21:43.966Z",
+  "generatedAt": "2025-10-24T07:24:47.646Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,13 +8,13 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "soft verify",
       "meta": {}
@@ -68,7 +68,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file._health.json",
       "meta": {
@@ -76,7 +76,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file.sitemap.xml",
       "meta": {
@@ -84,7 +84,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file.robots.txt",
       "meta": {
@@ -92,7 +92,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
@@ -125,37 +125,37 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
@@ -171,13 +171,13 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.health.ok",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.versioned.snapshot",
       "meta": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}
