@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T21:52:05.863Z",
+  "generatedAt": "2025-10-24T22:00:54.530Z",
   "crumbs": [
     {
       "t": 0,
@@ -14,19 +14,19 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "compute urls",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
@@ -44,13 +44,13 @@
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 4,
+      "t": 3,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
@@ -62,25 +62,25 @@
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 49,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health",
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 52,
       "level": "step",
       "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 16,
+      "t": 53,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 17,
+      "t": 54,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}

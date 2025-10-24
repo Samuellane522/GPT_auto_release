@@ -1,49 +1,60 @@
-<div align="center">
-<h1>Auto Prompter <sub><code>03c82e6f2f</code></sub></h1>
-<p><em>Security-first userscript delivery with encrypted bundles, SRI policy, versioned docs, and one-click install.</em></p>
-<p>
-<img alt="build" src="https://img.shields.io/badge/build-03c82e6f2f-0a84ff?style=flat&logo=github" /> 
-<a href="https://samuellane522.github.io/GPT_auto_release/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a> 
-<a href="https://samuellane522.github.io/GPT_auto_release/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a> 
-<img alt="license" src="https://img.shields.io/badge/license-MIT-informational?style=flat" /> 
-<img alt="status" src="https://img.shields.io/badge/status-beta-ffb020?style=flat" />
+<h1 align="center">Auto Prompter <code>undefined</code></h1>
+<p align="center"><em>Security-first userscript delivery with encrypted bundles, SRI policy, versioned docs, and one-click install.</em></p>
+<p align="center">
+  <img alt="build" src="https://img.shields.io/badge/build-undefined-0a84ff?style=flat&logo=github" />
+  <a href="https://samuellane522.github.io/GPT_auto_release/"><img alt="docs" src="https://img.shields.io/badge/docs-online-34c759?style=flat" /></a>
+  <a href="https://samuellane522.github.io/GPT_auto_release/verify.html"><img alt="verify" src="https://img.shields.io/badge/verify-checksums-64d2ff?style=flat" /></a>
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-informational?style=flat" />
+  <img alt="status" src="https://img.shields.io/badge/status-beta-ffb020?style=flat" />
+  <br/>
+  <a href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">
+    <img alt="Install Bootstrap" src="https://img.shields.io/badge/Install%20Bootstrap-Click-0a84ff?style=for-the-badge" />
+  </a>
 </p>
-[![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Click-0a84ff?style=for-the-badge)](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js)
-</div>
+
 [Docs](https://samuellane522.github.io/GPT_auto_release/) · [Install](https://samuellane522.github.io/GPT_auto_release/install.html) · [Verify](https://samuellane522.github.io/GPT_auto_release/verify.html) · [Releases](https://samuellane522.github.io/GPT_auto_release/releases.html) · [Changelog](https://samuellane522.github.io/GPT_auto_release/changelog.html)
-> Latest build: `03c82e6f2f`
+
+> Latest build: `undefined`
+
 ## Quick Start
 1. Install **Tampermonkey** (Chrome / Edge / Firefox).
 2. Click **Install Bootstrap** above — Tampermonkey will prompt you to install the userscript.
 3. Refresh ChatGPT — the bootstrap fetches & decrypts the encrypted bundle automatically.
+
 <details>
 <summary><strong>Verify before install</strong> (checksums + SRI policy)</summary>
-- Checksums: [checksums.txt](https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt)
+
+- Checksums: [checksums.txt](undefined)
 - Policy (SRI): [policy.json](https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json)
-**enc.bin SRI** (from policy):
-```text
-sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=
+
+**enc.bin SRI**
 ```
+
+```
+
 **CLI**
 ```bash
-curl -sSfL https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt | sed -n '1,60p'
+curl -sSfL undefined | sed -n '1,60p'
 ```
 </details>
+
 ## At a glance
 - Security-first pipeline: encrypted bundle + integrity (SRI) with human-verifiable checksums.
-- One-click install: a small bootstrap userscript fetches & decrypts your release.
-- Sanity and logs: shipping scripts assert golden signals ("event":"ok") and publish breadcrumbs.
-- Versioned documentation: GitHub Pages site generated on each ship with per-build snapshots.
-- Changelog automation: conventional commits parsed into a clear, skimmable history.
+- One-click install: tiny bootstrap userscript fetches & decrypts your release.
+- Sanity + logs: shipping scripts assert golden signals (`"event":"ok"`) and publish breadcrumbs.
+- Versioned docs: GitHub Pages site auto-generated on each ship with per-build snapshots.
+- Changelog automation: conventional commits → clean, skimmable history.
+
 ## Release Artifacts
 | Artifact | Link |
 | --- | --- |
 | Encrypted bundle (enc.bin) | [download](https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin) |
 | Bootstrap userscript | [install](https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js) |
-| Checksums | [checksums.txt](https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt) |
-| Key | [key.json](https://samuellane522.github.io/GPT_auto_release/download/beta/key.json) |
+| Checksums | [checksums.txt](undefined) |
+| Key | [key.json](undefined) |
 | Docs (latest) | [site root](https://samuellane522.github.io/GPT_auto_release/) |
-| Docs (build 03c82e6f2f) | [versioned index](https://samuellane522.github.io/GPT_auto_release/v/03c82e6f2f/index.html) |
+| Docs (build undefined) | [versioned index](https://samuellane522.github.io/GPT_auto_release/v/undefined/index.html) |
+
 ## Architecture
 ```mermaid
 flowchart LR
@@ -54,11 +65,9 @@ flowchart LR
   Enc --> Decrypt[Decrypt + Load]
   Decrypt --> App[Auto Prompter]
 ```
+
 ## Changelog
 See: https://samuellane522.github.io/GPT_auto_release/changelog.html
-## Troubleshooting
-- If Tampermonkey doesn’t prompt on install, ensure userscripts are enabled in your browser.
-- Corporate proxies may block GitHub Pages; download artifacts and install offline if needed.
-- If themes look off, use the Theme button in the docs header to toggle dark/light mode.
+
 ---
 <sub>Generated by the release pipeline.</sub>
