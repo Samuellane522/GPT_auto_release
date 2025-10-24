@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T21:28:53.415Z",
+  "generatedAt": "2025-10-24T21:52:08.545Z",
   "crumbs": [
     {
       "t": 0,
@@ -125,37 +125,37 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
