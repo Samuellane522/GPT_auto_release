@@ -1,17 +1,17 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Install</title>
+<title>Not Found</title>
 <meta name="theme-color" content="#4361ee">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Install the Auto Prompter bootstrap userscript and start securely loading encrypted releases.">
+<meta name="description" content="404 page for the Auto Prompter docs.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Install — Auto Prompter">
-<meta property="og:description" content="Install the Auto Prompter bootstrap userscript and start securely loading encrypted releases.">
+<meta property="og:title" content="Not Found — Auto Prompter">
+<meta property="og:description" content="404 page for the Auto Prompter docs.">
 <meta property="og:url" content="">
 <meta property="og:image" content="/assets/social-card.svg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Install — Auto Prompter">
-<meta name="twitter:description" content="Install the Auto Prompter bootstrap userscript and start securely loading encrypted releases.">
+<meta name="twitter:title" content="Not Found — Auto Prompter">
+<meta name="twitter:description" content="404 page for the Auto Prompter docs.">
 <meta name="twitter:image" content="/assets/social-card.svg">
 <link rel="canonical" href="">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
@@ -421,49 +421,16 @@ input:focus-visible, select:focus-visible, textarea:focus-visible{
     </header>
 
     <section class="hero">
-      <h1>Install <span class="badge">Docs</span></h1>
-      <p class="subtitle">One-click setup via userscript bootstrap</p>
+      <h1>Not Found <span class="badge">Docs</span></h1>
+      <p class="subtitle">The page you’re looking for doesn’t exist.</p>
     </section>
 
-    <nav class="breadcrumbs"><a href="./index.html">Docs</a> / <a href="./install.html">Install</a></nav>
+    <nav class="breadcrumbs"><a href="./index.html">Docs</a></nav>
     <main id="main">
 <div class="card">
-  <h2>1) Install Tampermonkey</h2>
-  <p>Chrome / Edge / Firefox — install the official Tampermonkey extension.</p>
-</div>
-
-<div class="card">
-  <h2>2) Install the Bootstrap userscript</h2>
-  <p>Click the button; Tampermonkey will prompt you to install:</p>
-  <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap">
-    <a class="btn" href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">Install bootstrap.user.js</a>
-    <button class="btn secondary" id="copyBoot" type="button" title="Copy URL to clipboard">Copy URL</button>
-  </div>
-  <pre class="mono" data-copyable>https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</pre>
-</div>
-
-<div class="card">
-  <h2>3) Trust but verify</h2>
-  <p>We publish an encrypted bundle and a policy file with SRI.</p>
-  <ul class="small mono">
-    <li>enc.bin: https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin</li>
-    <li>SRI: sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=</li>
-  </ul>
-  <p>Prefer the CLI? Use the <a href="./verify.html">verification page</a>.</p>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  const btn = document.getElementById('copyBoot');
-  btn && btn.addEventListener('click', async () => {
-    try{
-      await navigator.clipboard.writeText("https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js");
-      const old = btn.textContent; btn.textContent = 'Copied!'; setTimeout(()=>btn.textContent = 'Copy URL', 900);
-    }catch{}
-  });
-});
-</script>
-</main>
+  <h2>Lost?</h2>
+  <p>Try the <a href="./index.html">home page</a> or use your browser’s back button.</p>
+</div></main>
 
     <footer class="footer">Built with ❤️ by Auto Prompter — security-first releases, human-friendly UX.</footer>
   </div>
