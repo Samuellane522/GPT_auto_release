@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T07:19:03.001Z",
+  "generatedAt": "2025-10-24T07:21:41.495Z",
   "crumbs": [
     {
       "t": 0,
@@ -44,19 +44,19 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
@@ -80,7 +80,7 @@
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 16,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {}

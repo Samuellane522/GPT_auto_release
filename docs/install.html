@@ -21,13 +21,13 @@
   --grad1:#f5f7ff; --grad2:#eef7ff; --code:#0f172a; --code-bg:#f8fafc;
   --ring: rgba(67,97,238,.35); --shadow: 0 10px 30px rgba(2,6,23,.08);
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --fg:#e8eefc; --bg:#0b1220; --muted:#98a4b9; --line:#1f2937;
-    --chip:#121826; --card:rgba(18,24,38,.6); --grad1:#0b1220; --grad2:#0b1220;
-    --code:#e8eefc; --code-bg:#0b1220; --shadow: 0 10px 30px rgba(0,0,0,.35);
-  }
+
+html[data-theme="dark"]{
+  --fg:#e8eefc; --bg:#0b1220; --muted:#98a4b9; --line:#1f2937;
+  --chip:#121826; --card:rgba(18,24,38,.6); --grad1:#0b1220; --grad2:#0b1220;
+  --code:#e8eefc; --code-bg:#0b1220; --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -38,8 +38,8 @@ body{
     radial-gradient(1200px 400px at 95% -10%, rgba(16,185,129,.12), transparent),
     linear-gradient(180deg, var(--grad1), var(--grad2));
 }
-.container{max-width:1080px;margin:0 auto;padding:28px}
 
+.container{max-width:1080px;margin:0 auto;padding:28px}
 a{color:var(--primary);text-decoration:none}
 a:hover{text-decoration:underline}
 h1{font-size:34px;margin:0 0 8px}
@@ -60,6 +60,13 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
   background:transparent; backdrop-filter:saturate(140%) blur(6px);
 }
 .top a:hover{box-shadow:0 0 0 4px var(--ring)}
+
+.theme-toggle{
+  display:inline-flex; align-items:center; gap:8px; cursor:pointer;
+  border:1px solid var(--line); border-radius:12px; padding:6px 10px;
+  background:var(--chip);
+}
+.theme-toggle:hover{box-shadow:0 0 0 4px var(--ring)}
 
 .hero{
   border:1px solid var(--line); border-radius:20px; padding:26px; margin:12px 0 18px;
@@ -84,28 +91,64 @@ nav.top{margin:6px 0 10px}
 .btn:hover{transform:translateY(-1px); box-shadow: 0 12px 30px rgba(67,97,238,.25)}
 .btn.secondary{background:transparent; color:var(--primary)}
 
+.input{
+  display:inline-flex; align-items:center; gap:8px;
+  border:1px solid var(--line); background:var(--chip); color:var(--fg);
+  border-radius:12px; padding:8px 10px;
+}
+.input input{
+  border:none; background:transparent; color:inherit; outline:none; min-width:160px;
+}
+.input:focus-within{box-shadow:0 0 0 4px var(--ring)}
+
 .card{
   border:1px solid var(--line); border-radius:18px; padding:16px; margin:14px 0;
   background:var(--card); backdrop-filter:saturate(150%) blur(10px); box-shadow: var(--shadow)
 }
+.grid{display:grid; gap:14px}
+.grid.features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.feature{border:1px dashed var(--line); border-radius:16px; padding:14px}
 .kv{display:grid;grid-template-columns:180px 1fr;gap:8px 14px}
 .mono{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace}
 .small{color:var(--muted);font-size:12px}
+
+.callout{
+  border:1px solid var(--line); padding:12px; border-radius:12px; background:var(--chip);
+}
+.callout.ok{border-color:#22c55e55}
+.callout.warn{border-color:#f59e0b66}
+.callout.info{border-color:#3b82f655}
 
 .table{width:100%;border-collapse:collapse; overflow:hidden; border-radius:14px}
 .table thead th{background:rgba(67,97,238,.06)}
 .table td,.table th{border-top:1px solid var(--line);padding:10px}
 .table tr:nth-child(even){background:rgba(2,6,23,.02)}
+
 pre{
+  position:relative;
   background:var(--code-bg);color:var(--code);padding:12px;border-radius:12px;
   overflow:auto;border:1px solid var(--line)
 }
-code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid var(--line)}
+.copy-btn{
+  position:absolute; top:8px; right:8px;
+  border:1px solid var(--line); background:var(--chip); color:var(--fg);
+  border-radius:10px; padding:6px 10px; font-size:12px; cursor:pointer;
+}
+.copy-btn:hover{box-shadow:0 0 0 4px var(--ring)}
+
 .footer{color:var(--muted);font-size:12px;margin-top:26px}
+
+.to-top{
+  position:fixed; right:18px; bottom:18px; z-index:10;
+  display:none; opacity:.95;
+}
+.to-top.show{display:inline-flex}
+.sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
 </style>
 
 </head>
 <body>
+  <a href="#main" class="sr-only">Skip to content</a>
   <div class="container">
     <header class="site-header">
       
@@ -114,7 +157,12 @@ code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid v
       <span>Auto Prompter</span>
     </div>
   
-      <nav class="top"><a href="./index.html">Home</a><a href="./install.html">Install</a><a href="./verify.html">Verify</a><a href="./releases.html">Releases</a><a href="./changelog.html">Changelog</a></nav>
+      <div style="display:flex; gap:10px; align-items:center">
+        <nav class="top"><a href="./index.html">Home</a><a href="./install.html">Install</a><a href="./verify.html">Verify</a><a href="./releases.html">Releases</a><a href="./changelog.html">Changelog</a></nav>
+        <button id="themeToggle" class="theme-toggle" type="button" title="Toggle color theme">
+          <span aria-hidden="true">🌓</span> <span id="themeLabel">Theme</span>
+        </button>
+      </div>
     </header>
 
     <section class="hero">
@@ -123,7 +171,7 @@ code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid v
     </section>
 
     <nav class="breadcrumbs"><a href="./index.html">Docs</a> / <a href="./install.html">Install</a></nav>
-    <main>
+    <main id="main">
 <div class="card">
   <h2>1) Install Tampermonkey</h2>
   <p>Chrome / Edge / Firefox — install the official Tampermonkey extension.</p>
@@ -131,9 +179,12 @@ code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid v
 
 <div class="card">
   <h2>2) Install the Bootstrap userscript</h2>
-  <p>Click the button below; Tampermonkey will prompt you to install:</p>
-  <p><a class="btn" href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">Install bootstrap.user.js</a></p>
-  <p class="small mono">URL: https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</p>
+  <p>Click the button; Tampermonkey will prompt you to install:</p>
+  <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap">
+    <a class="btn" href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">Install bootstrap.user.js</a>
+    <button class="btn secondary" id="copyBoot" type="button" title="Copy URL to clipboard">Copy URL</button>
+  </div>
+  <pre class="mono" data-copyable>https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</pre>
 </div>
 
 <div class="card">
@@ -143,10 +194,76 @@ code{background:var(--chip);padding:2px 6px;border-radius:8px;border:1px solid v
     <li>enc.bin: https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin</li>
     <li>SRI: sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=</li>
   </ul>
-  <p>Prefer command-line verification? Use the <a href="./verify.html">verification page</a>.</p>
+  <p>Prefer the CLI? Use the <a href="./verify.html">verification page</a>.</p>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const btn = document.getElementById('copyBoot');
+  btn && btn.addEventListener('click', async () => {
+    try{
+      await navigator.clipboard.writeText("https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js");
+      const old = btn.textContent; btn.textContent = 'Copied!'; setTimeout(()=>btn.textContent = 'Copy URL', 900);
+    }catch{}
+  });
+});
+</script>
 </main>
 
     <footer class="footer">Built with ❤️ by Auto Prompter — security-first releases, human-friendly UX.</footer>
   </div>
+
+  <a href="#top" id="toTop" class="btn to-top">Top ↑</a>
+  <script>
+(function(){
+  // Respect stored preference or system default
+  const key = 'ap-theme';
+  const stored = localStorage.getItem(key);
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial = stored || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', initial);
+
+  function setTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    localStorage.setItem(key, t);
+    const label = document.getElementById('themeLabel');
+    if(label) label.textContent = t === 'dark' ? 'Dark' : 'Light';
+  }
+
+  window.__AP_THEME__ = { setTheme };
+
+  window.addEventListener('DOMContentLoaded', function(){
+    const btn = document.getElementById('themeToggle');
+    const label = document.getElementById('themeLabel');
+    if(label) label.textContent = initial === 'dark' ? 'Dark' : 'Light';
+    btn && btn.addEventListener('click', function(){
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(cur === 'light' ? 'dark' : 'light');
+    });
+
+    const toTop = document.getElementById('toTop');
+    if(toTop){
+      window.addEventListener('scroll', function(){
+        if(window.scrollY > 320) toTop.classList.add('show'); else toTop.classList.remove('show');
+      });
+      toTop.addEventListener('click', function(e){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+    }
+
+    // Attach copy buttons to <pre data-copyable>
+    document.querySelectorAll('pre[data-copyable]').forEach(function(pre){
+      const btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.type = 'button';
+      btn.textContent = 'Copy';
+      btn.addEventListener('click', async function(){
+        try{
+          await navigator.clipboard.writeText(pre.textContent || '');
+          const old = btn.textContent; btn.textContent = 'Copied!'; setTimeout(()=>btn.textContent=old, 900);
+        }catch{}
+      });
+      pre.appendChild(btn);
+    });
+  });
+})();
+</script>
 </body></html>
