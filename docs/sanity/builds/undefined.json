@@ -1,0 +1,234 @@
+{
+  "outDir": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity",
+  "buildsDir": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity/builds",
+  "repoRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release",
+  "meta": {
+    "startedAt": "2025-10-22T03:37:14.492Z",
+    "encMode": "remote",
+    "publicBase": "https://samuellane522.github.io/GPT_auto_release",
+    "dlPrefix": "/download/beta",
+    "id": "03c82e6f2f",
+    "entryAbs": "auto-prompter/main.user.js"
+  },
+  "urls": {},
+  "steps": [
+    {
+      "t": "2025-10-22T03:37:14.493Z",
+      "name": "resolve source entry & id",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.495Z",
+      "name": "ensure remote key",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.496Z",
+      "name": "write artifacts",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.499Z",
+      "name": "patch bootstrap with URL+SRI and verify",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.500Z",
+      "name": "checksums + policy (+SRI) after patch",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.502Z",
+      "name": "presence checks",
+      "details": {}
+    },
+    {
+      "t": "2025-10-22T03:37:14.502Z",
+      "name": "clean public tree",
+      "details": {}
+    }
+  ],
+  "checks": [
+    {
+      "t": "2025-10-22T03:37:14.493Z",
+      "name": "config.summary",
+      "ok": true,
+      "details": {
+        "encMode": "remote",
+        "wantEnc": true,
+        "cspSafe": false,
+        "minEncBytes": 1024
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.493Z",
+      "name": "enc.cspSafeConflict",
+      "ok": true,
+      "details": {
+        "wantEnc": true,
+        "cspSafe": false
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.496Z",
+      "name": "key/iv lengths",
+      "ok": true,
+      "details": {
+        "keyLen": 32,
+        "ivLen": 12
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.496Z",
+      "name": "artifacts.config",
+      "ok": true,
+      "details": {
+        "repoRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release",
+        "betaRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release",
+        "dlDir": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta",
+        "wantEnc": true,
+        "encMode": "remote",
+        "hasKeyUrl": true,
+        "hasStaticKey": true
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.499Z",
+      "name": "artifacts.encrypt.ok",
+      "ok": true,
+      "details": {
+        "encBytes": 29647
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.500Z",
+      "name": "bootstrap.patched",
+      "ok": true,
+      "details": {
+        "bootPath": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
+        "ENC_URL": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
+        "ENC_SRI": "sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s="
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.500Z",
+      "name": "bootstrap.verified",
+      "ok": true,
+      "details": {
+        "bootPath": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.502Z",
+      "name": "policy.sri set",
+      "ok": true,
+      "details": {
+        "bootSri": "sha256-ATKJ4W3wTY9pmzKyLWQunTZXSH9o1DMyy2DSfMDg0q0=",
+        "encSri": "sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s="
+      }
+    },
+    {
+      "t": "2025-10-22T03:37:14.502Z",
+      "name": "required files present",
+      "ok": true,
+      "details": {}
+    }
+  ],
+  "files": [
+    {
+      "label": "policy.json",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/policy.json",
+      "size": 701,
+      "sha256": "6a7e308304ccd8118af1bc18cbb4b139205e765b47f534f49118169e1ffdef38",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json"
+    },
+    {
+      "label": "enc.bin",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/auto-prompter-enc.bin",
+      "size": 29647,
+      "sha256": "5034591640f455d62b865dc13faea12ca98bb4ceaf21a78a0ed2e2ea7c0f63eb",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin"
+    },
+    {
+      "label": "bootstrap.user.js",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
+      "size": 29843,
+      "sha256": "013289e16df04d8f699b32b22d642e9d3657487f68d43332cb60d27cc0e0d2ad",
+      "url": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
+    },
+    {
+      "label": "checksums.txt",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/checksums.txt",
+      "size": 226,
+      "sha256": "cb3c11a07d6d9883d5aae4992616bd5a68dffb18c48f5826dfd25b91743a2cc3",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt"
+    },
+    {
+      "label": "key.json",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/key.json",
+      "size": 179,
+      "sha256": "7c5bf1e5b3b15d40edbab9268db87278cbb87471bd8cd48b3af97e8481ee16e3",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/key.json"
+    }
+  ],
+  "releaseTree": [
+    {
+      "type": "header",
+      "text": "beta-release/"
+    },
+    {
+      "type": "file",
+      "path": "beta-release/LATEST.txt",
+      "size": 11
+    },
+    {
+      "type": "dir",
+      "path": "beta-release/current"
+    },
+    {
+      "type": "dir",
+      "path": "beta-release/current/boot"
+    },
+    {
+      "type": "file",
+      "path": "beta-release/current/boot/auto-prompter-bootstrap.user.js",
+      "size": 29843
+    },
+    {
+      "type": "file",
+      "path": "beta-release/index.json",
+      "size": 957
+    },
+    {
+      "type": "file",
+      "path": "beta-release/today.json",
+      "size": 40
+    },
+    {
+      "type": "header",
+      "text": "download/beta/"
+    },
+    {
+      "type": "file",
+      "path": "download/beta/auto-prompter-enc.bin",
+      "size": 29647
+    },
+    {
+      "type": "file",
+      "path": "download/beta/checksums.txt",
+      "size": 226
+    },
+    {
+      "type": "file",
+      "path": "download/beta/key.json",
+      "size": 179
+    },
+    {
+      "type": "file",
+      "path": "download/beta/policy.json",
+      "size": 701
+    }
+  ],
+  "summary": {},
+  "finishedAt": null
+}

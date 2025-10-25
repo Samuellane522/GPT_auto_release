@@ -1,0 +1,135 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build Report — ?</title><style>
+body{font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Inter,Arial;margin:24px;line-height:1.45}
+h1{font-size:20px;margin:0 0 8px} h2{font-size:16px;margin:24px 0 6px}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+table{border-collapse:separate;border-spacing:0;width:100%}
+th,td{padding:6px 8px;border-bottom:1px solid #eee;vertical-align:top}
+.muted{color:#666}.ok{color:#0a6}.bad{color:#d33}.chip{border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.box{border:1px solid #eee;border-radius:12px;padding:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+</style></head>
+<body>
+  <h1>Build Report <span class="chip">?</span></h1>
+  <div class="grid">
+    <div class="box">
+      <h2>Summary</h2>
+      <div>Started: <span class="muted">2025-10-22T03:37:14.492Z</span></div>
+      <div>Finished: <span class="muted">—</span></div>
+      <div>Status: <span class="bad">Issues found</span> (undefined/undefined)</div>
+      <div>Mode: <code>remote</code></div>
+      <div>Base: <code>https://samuellane522.github.io/GPT_auto_release</code></div>
+      <div>DL Prefix: <code>/download/beta</code></div>
+    </div>
+    <div class="box">
+      <h2>URLs</h2>
+      <div class="mono"></div>
+    </div>
+  </div>
+
+  <h2>Checks</h2>
+  <table><thead><tr><th></th><th>Check</th><th>Time</th></tr></thead><tbody>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>config.summary</strong><br><span class="muted">{"encMode":"remote","wantEnc":true,"cspSafe":false,"minEncBytes":1024}</span></td>
+  <td class="muted">2025-10-22T03:37:14.493Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>enc.cspSafeConflict</strong><br><span class="muted">{"wantEnc":true,"cspSafe":false}</span></td>
+  <td class="muted">2025-10-22T03:37:14.493Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>key/iv lengths</strong><br><span class="muted">{"keyLen":32,"ivLen":12}</span></td>
+  <td class="muted">2025-10-22T03:37:14.496Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>artifacts.config</strong><br><span class="muted">{"repoRoot":"/Users/samuellane/Documents/GitHub/GPT_auto_release","betaRoot":"/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release","dlDir":"/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta","wantEnc":true,"encMode":"remote","hasKeyUrl":true,"hasStaticKey":true}</span></td>
+  <td class="muted">2025-10-22T03:37:14.496Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>artifacts.encrypt.ok</strong><br><span class="muted">{"encBytes":29647}</span></td>
+  <td class="muted">2025-10-22T03:37:14.499Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>bootstrap.patched</strong><br><span class="muted">{"bootPath":"/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js","ENC_URL":"https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin","ENC_SRI":"sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s="}</span></td>
+  <td class="muted">2025-10-22T03:37:14.500Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>bootstrap.verified</strong><br><span class="muted">{"bootPath":"/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"}</span></td>
+  <td class="muted">2025-10-22T03:37:14.500Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>policy.sri set</strong><br><span class="muted">{"bootSri":"sha256-ATKJ4W3wTY9pmzKyLWQunTZXSH9o1DMyy2DSfMDg0q0=","encSri":"sha256-UDRZFkD0VdYrhl3BP66hLKmLtM6vIaeKDtLi6nwPY+s="}</span></td>
+  <td class="muted">2025-10-22T03:37:14.502Z</td>
+</tr>
+<tr>
+  <td class="ok">✅</td>
+  <td><strong>required files present</strong><br><span class="muted">{}</span></td>
+  <td class="muted">2025-10-22T03:37:14.502Z</td>
+</tr></tbody></table>
+
+  <h2>Artifacts</h2>
+  <table><thead><tr><th>Label</th><th>Path</th><th>Size</th><th>SHA256</th><th>URL</th></tr></thead><tbody>
+<tr>
+  <td>policy.json</td>
+  <td class="mono">../GPT_auto_release/download/beta/policy.json</td>
+  <td>0.7 KiB</td>
+  <td class="mono">6a7e308304ccd8118af1bc18cbb4b139205e765b47f534f49118169e1ffdef38</td>
+  <td class="mono"><a href="https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json">https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json</a></td>
+</tr>
+<tr>
+  <td>enc.bin</td>
+  <td class="mono">../GPT_auto_release/download/beta/auto-prompter-enc.bin</td>
+  <td>29.0 KiB</td>
+  <td class="mono">5034591640f455d62b865dc13faea12ca98bb4ceaf21a78a0ed2e2ea7c0f63eb</td>
+  <td class="mono"><a href="https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin">https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin</a></td>
+</tr>
+<tr>
+  <td>bootstrap.user.js</td>
+  <td class="mono">../GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</td>
+  <td>29.1 KiB</td>
+  <td class="mono">013289e16df04d8f699b32b22d642e9d3657487f68d43332cb60d27cc0e0d2ad</td>
+  <td class="mono"><a href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</a></td>
+</tr>
+<tr>
+  <td>checksums.txt</td>
+  <td class="mono">../GPT_auto_release/download/beta/checksums.txt</td>
+  <td>0.2 KiB</td>
+  <td class="mono">cb3c11a07d6d9883d5aae4992616bd5a68dffb18c48f5826dfd25b91743a2cc3</td>
+  <td class="mono"><a href="https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt">https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt</a></td>
+</tr>
+<tr>
+  <td>key.json</td>
+  <td class="mono">../GPT_auto_release/download/beta/key.json</td>
+  <td>0.2 KiB</td>
+  <td class="mono">7c5bf1e5b3b15d40edbab9268db87278cbb87471bd8cd48b3af97e8481ee16e3</td>
+  <td class="mono"><a href="https://samuellane522.github.io/GPT_auto_release/download/beta/key.json">https://samuellane522.github.io/GPT_auto_release/download/beta/key.json</a></td>
+</tr></tbody></table>
+
+  <h2>Release Repo Snapshot</h2>
+  <pre class="box mono" style="white-space:pre-wrap">
+# beta-release/
+📄 beta-release/LATEST.txt (0.0 KiB)
+📁 beta-release/current
+📁 beta-release/current/boot
+📄 beta-release/current/boot/auto-prompter-bootstrap.user.js (29.1 KiB)
+📄 beta-release/index.json (0.9 KiB)
+📄 beta-release/today.json (0.0 KiB)
+
+# download/beta/
+📄 download/beta/auto-prompter-enc.bin (29.0 KiB)
+📄 download/beta/checksums.txt (0.2 KiB)
+📄 download/beta/key.json (0.2 KiB)
+📄 download/beta/policy.json (0.7 KiB)</pre>
+
+  <h2>Steps</h2>
+  <ol><li><strong>resolve source entry &amp; id</strong> <span class="muted">(2025-10-22T03:37:14.493Z)</span><br><span class="muted mono">{}</span></li><li><strong>ensure remote key</strong> <span class="muted">(2025-10-22T03:37:14.495Z)</span><br><span class="muted mono">{}</span></li><li><strong>write artifacts</strong> <span class="muted">(2025-10-22T03:37:14.496Z)</span><br><span class="muted mono">{}</span></li><li><strong>patch bootstrap with URL+SRI and verify</strong> <span class="muted">(2025-10-22T03:37:14.499Z)</span><br><span class="muted mono">{}</span></li><li><strong>checksums + policy (+SRI) after patch</strong> <span class="muted">(2025-10-22T03:37:14.500Z)</span><br><span class="muted mono">{}</span></li><li><strong>presence checks</strong> <span class="muted">(2025-10-22T03:37:14.502Z)</span><br><span class="muted mono">{}</span></li><li><strong>clean public tree</strong> <span class="muted">(2025-10-22T03:37:14.502Z)</span><br><span class="muted mono">{}</span></li></ol>
+</body></html>

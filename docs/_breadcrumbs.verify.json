@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T20:31:23.997Z",
+  "generatedAt": "2025-10-25T20:51:37.218Z",
   "crumbs": [
     {
       "t": 0,
@@ -44,7 +44,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.releases.html",
       "meta": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.changelog.html",
       "meta": {

@@ -1,82 +1,76 @@
 {
-  "generatedAt": "2025-10-25T20:31:21.318Z",
+  "generatedAt": "2025-10-25T20:51:37.170Z",
   "crumbs": [
     {
-      "t": 17,
+      "t": 19,
       "level": "step",
       "msg": "load config",
       "meta": {}
     },
     {
-      "t": 17,
+      "t": 19,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 17,
+      "t": 19,
       "level": "step",
       "msg": "compute urls",
       "meta": {}
     },
     {
-      "t": 18,
+      "t": 20,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
     },
     {
-      "t": 18,
+      "t": 20,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
     },
     {
-      "t": 18,
+      "t": 20,
       "level": "step",
       "msg": "ensure docs dir",
       "meta": {}
     },
     {
-      "t": 18,
+      "t": 20,
       "level": "step",
       "msg": "write manifest",
       "meta": {}
     },
     {
-      "t": 20,
+      "t": 22,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 21,
+      "t": 23,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 21,
+      "t": 24,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 32,
+      "t": 33,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health + assets",
       "meta": {}
     },
     {
-      "t": 34,
+      "t": 35,
       "level": "step",
       "msg": "assets: brand (logo/favicon/social)",
-      "meta": {}
-    },
-    {
-      "t": 37,
-      "level": "step",
-      "msg": "write portfolio + root README",
       "meta": {}
     },
     {
@@ -87,10 +81,16 @@
     },
     {
       "t": 39,
+      "level": "step",
+      "msg": "mirror sanity build logs",
+      "meta": {}
+    },
+    {
+      "t": 41,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {
-        "duration_ms": 39,
+        "duration_ms": 40,
         "latestId": "03c82e6f2f"
       }
     }
