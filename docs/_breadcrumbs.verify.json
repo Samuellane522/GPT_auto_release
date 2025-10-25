@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T07:49:22.257Z",
+  "generatedAt": "2025-10-25T07:50:36.800Z",
   "crumbs": [
     {
       "t": 0,
@@ -28,7 +28,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.install.html",
       "meta": {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.verify.html",
       "meta": {
@@ -44,7 +44,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.releases.html",
       "meta": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.changelog.html",
       "meta": {
@@ -92,7 +92,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
@@ -137,25 +137,25 @@
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 4,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
