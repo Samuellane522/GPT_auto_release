@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T20:51:40.097Z",
+  "generatedAt": "2025-10-25T21:02:33.807Z",
   "crumbs": [
     {
       "t": 0,
@@ -20,7 +20,7 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.index.html",
       "meta": {
@@ -28,7 +28,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.install.html",
       "meta": {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.verify.html",
       "meta": {
@@ -44,7 +44,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.releases.html",
       "meta": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "ok",
       "msg": "docs.file.changelog.html",
       "meta": {
@@ -92,13 +92,13 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.enc",
       "meta": {
@@ -107,7 +107,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.boot",
       "meta": {
@@ -116,7 +116,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.sums",
       "meta": {
@@ -177,7 +177,7 @@
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.versioned.snapshot",
       "meta": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}
