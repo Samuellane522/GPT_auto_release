@@ -31,8 +31,8 @@ footer{border-top:1px solid #111827;color:#6b7280;margin-top:40px;padding:16px 0
 <header class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      <img src="assets/logo.png" alt="Auto Prompter logo" onerror="(function(el){try{console.warn(JSON.stringify({level:'WARN',component:'layout',op:'logo',version:'v2025.1025.r4',AP_LOAD:'docs.ui.layout',reason:'assets/logo.png not found or failed to load',href:location.href,userAgent:navigator.userAgent}))}catch(_){};el&&el.remove()})(this)" />
-      <strong>Auto Prompter</strong>
+      <img src="assets/logo.png" alt="Auto Prompter — Docs logo" onerror="(function(el){try{console.warn(JSON.stringify({level:'WARN',component:'layout',op:'logo',version:'v2025.1025.r4',AP_LOAD:'docs.ui.layout',reason:'assets/logo.png not found or failed to load',href:location.href,userAgent:navigator.userAgent}))}catch(_){};el&&el.remove()})(this)" />
+      <strong>Auto Prompter — Docs</strong>
       <span class="badge">Build: <code>current</code></span>
     </div>
     <nav class="nav">
@@ -44,39 +44,72 @@ footer{border-top:1px solid #111827;color:#6b7280;margin-top:40px;padding:16px 0
 </header>
 <main class="main">
   <div class="breadcrumbs"><a href="./index.html">Docs</a></div>
-  <h1>Auto Prompter</h1>
+  <h1>Auto Prompter — Docs</h1>
   <p class="subtitle">Build: 03c82e6f2f</p>
-  <p class="desc">Auto Prompter — security-first userscript delivery with encrypted bundles, SRI policy, and versioned docs.</p>
+  <p class="desc">Auto Prompter — security-first userscript delivery with encrypted bundles, SRI policy, remote keys, and versioned docs.</p>
   
-<div class="grid features">
-  <div class="feature">
-    <h3>Security-first</h3>
-    <p>Encrypted bundles + SRI policy with human-verifiable checksums.</p>
-  </div>
-  <div class="feature">
-    <h3>One-click</h3>
-    <p>Tampermonkey bootstrap fetches & decrypts your release automatically.</p>
-  </div>
-  <div class="feature">
-    <h3>Versioned docs</h3>
-    <p>Each ship snapshots docs for easy back-references.</p>
-  </div>
-  <div class="feature">
-    <h3>Changelog</h3>
-    <p>Conventional commits → clean, skimmable history.</p>
-  </div>
-</div>
+<section class="hero card" style="text-align:center">
+  <h1 class="title">Auto Prompter</h1>
+  <p class="muted" style="max-width:720px;margin:0 auto">
+    Security-first userscript delivery with encrypted bundles, SRI policy, remote keys, and versioned documentation.
+  </p>
+  <p style="margin-top:16px">
+    <a class="btn" href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">Install Tampermonkey Bootstrap</a>
+    <a class="btn secondary" href="./install.html" style="margin-left:8px">Detailed Install Guide</a>
+  </p>
+  <div class="small mono" style="margin-top:8px">Bootstrap URL: https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</div>
+</section>
 
-<div class="card">
-  <h2>Quick Start</h2>
+<nav class="card" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ul class="toc">
+    <li><a href="#install">Install</a></li>
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#security">Security at a glance</a></li>
+    <li><a href="#verify">Verify a release</a></li>
+    <li><a href="#releases">Releases & versions</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<section id="install" class="card">
+  <h2>Install</h2>
   <ol>
-    <li>Install the <a class="btn" href="https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js">Tampermonkey Bootstrap</a></li>
-    <li>Refresh ChatGPT; the bootstrap fetches & decrypts your bundle.</li>
+    <li>Install <a href="https://www.tampermonkey.net/">Tampermonkey</a> for your browser.</li>
+    <li>Open the bootstrap link and accept the userscript prompt:
+      <div class="mono small" style="margin-top:6px">https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</div>
+    </li>
+    <li>Refresh ChatGPT. The bootstrap securely fetches and decrypts your bundle.</li>
   </ol>
-  <p class="small">Bootstrap URL: <span class="mono">https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js</span></p>
-</div>
+  <p class="callout info small" style="margin-top:10px">
+    Tip: You can always re-install the bootstrap to update it. The encrypted payload updates independently per release.
+  </p>
+</section>
 
-<div class="card">
+<section id="how-it-works" class="card">
+  <h2>How it works</h2>
+  <div class="grid features">
+    <div class="feature">
+      <h3>Encrypted bundle</h3>
+      <p>Your main userscript ships as <code>enc.bin</code>, decrypted in-browser by the bootstrap.</p>
+    </div>
+    <div class="feature">
+      <h3>Remote key</h3>
+      <p>The AES key lives at <code>key.json</code>, so you can rotate credentials without changing the bootstrap.</p>
+    </div>
+    <div class="feature">
+      <h3>SRI policy</h3>
+      <p>We publish Subresource Integrity hashes so you can verify the exact bits served by Pages.</p>
+    </div>
+    <div class="feature">
+      <h3>Versioned docs</h3>
+      <p>Every ship snapshots docs under <code>/docs/v/&lt;build-id&gt;</code> for easy back-references.</p>
+    </div>
+  </div>
+</section>
+
+<section id="security" class="card">
   <h2>Security at a glance</h2>
   <div class="kv small mono">
     <div>enc.bin</div><div>https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin</div>
@@ -85,31 +118,93 @@ footer{border-top:1px solid #111827;color:#6b7280;margin-top:40px;padding:16px 0
     <div>checksums.txt</div><div>https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt</div>
   </div>
   <p style="margin-top:10px">
-    <a class="btn secondary" href="./verify.html">Verify a release</a>
-    <a class="btn secondary" href="./install.html" style="margin-left:8px">Install guide</a>
-    <a class="btn secondary" href="./releases.html" style="margin-left:8px">Releases</a>
+    <a class="btn secondary" href="./verify.html">Run verification</a>
+    <a class="btn secondary" href="./changelog.html" style="margin-left:8px">View changelog</a>
+  </p>
+</section>
+
+<section id="verify" class="card">
+  <h2>Verify a release</h2>
+  <ol>
+    <li>Open <a href="./verify.html">Verify</a> to compare local SRI/checksums with the hosted artifacts.</li>
+    <li>Confirm that <code>enc.bin</code> and the bootstrap SRI match the published policy.</li>
+  </ol>
+  <div id="health" class="callout info small">Checking docs health…</div>
+</section>
+
+<section id="releases" class="card">
+  <h2>Releases & versions</h2>
+  <p>
+    Latest build: <span class="mono">03c82e6f2f</span>
+  </p>
+  <p>
+    <a class="btn secondary" href="./releases.html">All releases</a>
+    <a class="btn secondary" href="./v/03c82e6f2f/index.html" style="margin-left:8px">Docs for this build</a>
     <a class="btn secondary" href="./changelog.html" style="margin-left:8px">Changelog</a>
   </p>
-</div>
+</section>
 
-<div class="card">
-  <h2>Status</h2>
-  <div id="status" class="callout info small">Checking docs health…</div>
-</div>
+<section id="troubleshooting" class="card">
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li><strong>No prompt changes?</strong> Ensure Tampermonkey is enabled for chat.openai.com/chatgpt.com and refresh.</li>
+    <li><strong>SRI mismatch?</strong> Re-pull the repo and re-ship; verify <code>policy.json</code> and <code>checksums.txt</code> are updated.</li>
+    <li><strong>Cache issues?</strong> Hard refresh the site hosting the bootstrap and the enc bundle.</li>
+    <li><strong>Domain lock?</strong> If configured, features only run on allowed hosts.</li>
+  </ul>
+</section>
+
+<section id="faq" class="card">
+  <h2>FAQ</h2>
+  <details>
+    <summary>Can I pin to a specific build?</summary>
+    <div class="small">Yes. Use the versioned docs under <code>/docs/v/&lt;build-id&gt;</code> and the corresponding artifacts from that build.</div>
+  </details>
+  <details>
+    <summary>How often should I rotate the key?</summary>
+    <div class="small">We recommend <em>at most</em> every 30 days (configurable by your pipeline). Rotating doesn’t require changing the bootstrap.</div>
+  </details>
+  <details>
+    <summary>How do I uninstall?</summary>
+    <div class="small">Remove the bootstrap from Tampermonkey and clear any site data if desired. No files are written outside the extension.</div>
+  </details>
+</section>
 
 <script>
-(async function(){
-  const el = document.getElementById('status');
-  try{
-    const r = await fetch('./_health.json', {cache:'no-store'});
-    const j = await r.json();
-    const ok = !!(j && j.ok);
-    el.className = 'callout ' + (ok ? 'ok small' : 'warn small');
-    el.textContent = ok ? 'OK — build ' + (j.latestId || '03c82e6f2f') : 'Warning — health check failed';
-  }catch(e){
-    el.className = 'callout warn small';
-    el.textContent = 'Unable to load health: ' + e.message;
-  }
+(() => {
+  // Health probe for a quick, visible signal.
+  const el = document.getElementById('health');
+  if (!el) return;
+  fetch('./_health.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(j => {
+      const ok = !!(j && j.ok);
+      el.className = 'callout ' + (ok ? 'ok small' : 'warn small');
+      el.textContent = ok
+        ? 'OK — build ' + (j.latestId || "03c82e6f2f")
+        : 'Warning — health check failed';
+    })
+    .catch(e => {
+      el.className = 'callout warn small';
+      el.textContent = 'Unable to load health: ' + e.message;
+    });
+
+  // Tiny TOC highlighter (progressively enhanced; no-op if CSS handles it)
+  const links = Array.from(document.querySelectorAll('.toc a'));
+  const map = new Map(links.map(a => [a.getAttribute('href'), a]));
+  const sections = links
+    .map(a => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
+  const onScroll = () => {
+    let current = null;
+    for (const s of sections) {
+      const r = s.getBoundingClientRect();
+      if (r.top <= 120) current = s.id;
+    }
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
 </script>
 
