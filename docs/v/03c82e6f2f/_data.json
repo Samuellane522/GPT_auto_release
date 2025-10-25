@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T22:53:04.253Z",
+  "generatedAt": "2025-10-25T08:06:53.631Z",
   "latestId": "03c82e6f2f",
   "urls": {
     "boot": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
@@ -9,7 +9,7 @@
   },
   "integrity": {
     "enc": "sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=",
-    "boot": "sha256-A0PoGnWx14ocSV0hDJZcORhbcGZ6/rH80a1vs8z0UjM="
+    "boot": "sha256-unEIPkq6CAeJaEmjUdX7MQInL8QxOU/ZwRTJ63br8TU="
   },
   "dlPrefix": "/download/beta",
   "publicBase": "https://samuellane522.github.io/GPT_auto_release"

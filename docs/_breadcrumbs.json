@@ -1,95 +1,98 @@
 {
-  "generatedAt": "2025-10-24T22:53:04.270Z",
+  "generatedAt": "2025-10-25T08:06:53.650Z",
   "crumbs": [
     {
-      "t": 0,
+      "t": 20,
       "level": "step",
       "msg": "load config",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 21,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 21,
       "level": "step",
       "msg": "compute urls",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 21,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 21,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 22,
       "level": "step",
       "msg": "ensure docs dir",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 22,
       "level": "step",
       "msg": "write manifest",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 24,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 25,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 4,
+      "t": 26,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 35,
       "level": "step",
-      "msg": "ancillary: sitemap/robots + health",
+      "msg": "ancillary: sitemap/robots + health + assets",
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 37,
       "level": "step",
       "msg": "assets: brand (logo/favicon/social)",
       "meta": {}
     },
     {
-      "t": 16,
+      "t": 39,
       "level": "step",
       "msg": "write portfolio + root README",
       "meta": {}
     },
     {
-      "t": 17,
+      "t": 40,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 18,
+      "t": 40,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
-      "meta": {}
+      "meta": {
+        "duration_ms": 40,
+        "latestId": "03c82e6f2f"
+      }
     }
   ]
 }
