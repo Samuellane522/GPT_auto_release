@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T15:31:04.680Z",
+  "generatedAt": "2025-10-25T15:31:07.265Z",
   "crumbs": [
     {
       "t": 0,
@@ -92,13 +92,13 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.enc",
       "meta": {
@@ -107,7 +107,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.boot",
       "meta": {
@@ -116,7 +116,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.sums",
       "meta": {
@@ -155,7 +155,7 @@
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
