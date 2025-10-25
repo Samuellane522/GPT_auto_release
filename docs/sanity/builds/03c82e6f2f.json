@@ -3,7 +3,7 @@
   "buildsDir": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity/builds",
   "repoRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release",
   "meta": {
-    "startedAt": "2025-10-25T21:24:22.036Z",
+    "startedAt": "2025-10-25T21:30:23.623Z",
     "buildlogVersion": "5.2.1",
     "repoRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release",
     "outDir": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity",
@@ -53,7 +53,7 @@
           "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/bin/build/build.real.mjs"
         ],
         "cwd": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter",
-        "uptimeSec": 0.054626541,
+        "uptimeSec": 0.100859667,
         "envHints": {
           "NODE_ENV": "production",
           "DOTENV_CONFIG_PATH": ".env.production"
@@ -66,12 +66,12 @@
         "release": "25.0.0",
         "cpus": 8,
         "totalmem": 17179869184,
-        "freemem": 166559744
+        "freemem": 229408768
       },
       "git": {
         "branch": "main",
-        "commitShort": "c3ba602",
-        "commit": "c3ba602805b704c849ea726b0c4a85a6130ef5ed",
+        "commitShort": "0b813bf",
+        "commit": "0b813bfa77673d3b97a5daec1f9af47ab0b87ff2",
         "remote": "git@github.com:Samuellane522/auto-prompter.git",
         "worktreeDirty": false,
         "statusLines": []
@@ -87,11 +87,12 @@
       },
       "encryption": {},
       "subrepo": {},
-      "release": {}
+      "release": {},
+      "docs": {}
     },
     "id": "03c82e6f2f",
     "entryAbs": "auto-prompter/main.user.js",
-    "finishedAt": "2025-10-25T21:24:22.126Z"
+    "finishedAt": "2025-10-25T21:30:23.754Z"
   },
   "urls": {
     "ENC_URL": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
@@ -104,39 +105,39 @@
   },
   "steps": [
     {
-      "t": "2025-10-25T21:24:22.037Z",
+      "t": "2025-10-25T21:30:23.624Z",
       "name": "resolve source entry & id",
       "details": {}
     },
     {
-      "t": "2025-10-25T21:24:22.038Z",
+      "t": "2025-10-25T21:30:23.625Z",
       "name": "write artifacts",
       "details": {}
     },
     {
-      "t": "2025-10-25T21:24:22.043Z",
+      "t": "2025-10-25T21:30:23.665Z",
       "name": "patch bootstrap with URL+SRI and verify",
       "details": {}
     },
     {
-      "t": "2025-10-25T21:24:22.045Z",
+      "t": "2025-10-25T21:30:23.670Z",
       "name": "checksums + policy (+SRI) after patch",
       "details": {}
     },
     {
-      "t": "2025-10-25T21:24:22.047Z",
+      "t": "2025-10-25T21:30:23.673Z",
       "name": "presence checks",
       "details": {}
     },
     {
-      "t": "2025-10-25T21:24:22.047Z",
+      "t": "2025-10-25T21:30:23.673Z",
       "name": "clean public tree",
       "details": {}
     }
   ],
   "checks": [
     {
-      "t": "2025-10-25T21:24:22.036Z",
+      "t": "2025-10-25T21:30:23.623Z",
       "name": "config.summary",
       "ok": true,
       "details": {
@@ -146,7 +147,7 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.036Z",
+      "t": "2025-10-25T21:30:23.623Z",
       "name": "enc.cspSafeConflict",
       "ok": true,
       "details": {
@@ -155,7 +156,7 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.038Z",
+      "t": "2025-10-25T21:30:23.626Z",
       "name": "artifacts.config",
       "ok": true,
       "details": {
@@ -169,7 +170,7 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.043Z",
+      "t": "2025-10-25T21:30:23.663Z",
       "name": "artifacts.encrypt.ok",
       "ok": true,
       "details": {
@@ -177,7 +178,7 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.045Z",
+      "t": "2025-10-25T21:30:23.670Z",
       "name": "bootstrap.patched",
       "ok": true,
       "details": {
@@ -187,7 +188,7 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.045Z",
+      "t": "2025-10-25T21:30:23.670Z",
       "name": "bootstrap.verified",
       "ok": true,
       "details": {
@@ -195,16 +196,16 @@
       }
     },
     {
-      "t": "2025-10-25T21:24:22.047Z",
+      "t": "2025-10-25T21:30:23.672Z",
       "name": "policy.sri set",
       "ok": true,
       "details": {
-        "bootSri": "sha256-AkCR3zK7v+x7Cae/p5OMDTRW0GMCtQJ+i7Gzs96x9Lo=",
+        "bootSri": "sha256-ksngkdVSSv/n/XwIWjSp7dgShDIV6sF5V6ZN//hFmFY=",
         "encSri": "sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="
       }
     },
     {
-      "t": "2025-10-25T21:24:22.047Z",
+      "t": "2025-10-25T21:30:23.673Z",
       "name": "required files present",
       "ok": true,
       "details": {}
@@ -222,22 +223,22 @@
       "label": "bootstrap.user.js",
       "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
       "size": 29843,
-      "sha256": "024091df32bbbfec7b09a7bfa7938c0d3456d06302b5027e8bb1b3b3deb1f4ba",
+      "sha256": "92c9e091d5524affe7fd7c085a34a9edd812843215eac17957a64dfff8459856",
       "url": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
-    },
-    {
-      "label": "checksums.txt",
-      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/checksums.txt",
-      "size": 226,
-      "sha256": "445a5a3000c813630362a307533f1763790d6ddc815c083b6966d3863043152f",
-      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt"
     },
     {
       "label": "policy.json",
       "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/policy.json",
       "size": 703,
-      "sha256": "e204b7e72e64eb4b68b83bff08e45c91044171d82d143d8e727782f0653df9c0",
+      "sha256": "ee0db0968a01686b810a87238bb43a8141311f70b09a6b1a44b20758dbb86007",
       "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json"
+    },
+    {
+      "label": "checksums.txt",
+      "path": "/Users/samuellane/Documents/GitHub/GPT_auto_release/download/beta/checksums.txt",
+      "size": 226,
+      "sha256": "db3928bae7fa5fd156ae92407b50e526a5d3a4c82a63dd0d6f6ebaeefdf55810",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt"
     },
     {
       "label": "key.json",
@@ -311,5 +312,5 @@
     "totalChecks": 8,
     "pass": true
   },
-  "finishedAt": "2025-10-25T21:24:22.126Z"
+  "finishedAt": "2025-10-25T21:30:23.754Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T21:24:25.709Z",
+  "generatedAt": "2025-10-25T21:30:27.077Z",
   "crumbs": [
     {
       "t": 20,
@@ -20,7 +20,7 @@
       "meta": {}
     },
     {
-      "t": 21,
+      "t": 20,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
@@ -50,13 +50,13 @@
       "meta": {}
     },
     {
-      "t": 25,
+      "t": 24,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 25,
+      "t": 24,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
@@ -68,7 +68,7 @@
       "meta": {}
     },
     {
-      "t": 37,
+      "t": 38,
       "level": "step",
       "msg": "assets: brand (logo/favicon/social)",
       "meta": {}
