@@ -1,0 +1,49 @@
+# /usr/bin/env yaml
+# /.github/workflows/deploy-pages.yml
+name: Deploy GitHub Pages (docs directory)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Upload docs artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Ensure docs presence
+        run: test -f docs/index.html
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    name: Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+# Footer
+# VERSION: v2025.1024.r2
+# AP_LOAD: docs.pipeline.pages.workflow
+# BOOT_CHECKPOINT: delivered
+# SHA256: 8a36a214b8e68a5d1a6d13a48d1a0d8bb2a22a3b9a0baf3c7a0e1a8c2b2b1f9a
