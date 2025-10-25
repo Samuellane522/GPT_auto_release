@@ -1,5 +1,5 @@
 # Build Report — 03c82e6f2f
-when: 2025-10-25T21:02:30.438Z
+when: 2025-10-25T21:10:16.722Z
 
 ## Summary
 status: PASS (8/8)
@@ -7,7 +7,7 @@ official: no
 
 ## Meta
 {
-  "startedAt": "2025-10-25T21:02:30.354Z",
+  "startedAt": "2025-10-25T21:10:16.628Z",
   "buildlogVersion": "5.1.0",
   "repoRoot": "/Users/samuellane/Documents/GitHub/GPT_auto_release",
   "outDir": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity",
@@ -57,7 +57,7 @@ official: no
         "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/bin/build/build.real.mjs"
       ],
       "cwd": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter",
-      "uptimeSec": 0.052200459,
+      "uptimeSec": 0.056298167,
       "envHints": {
         "NODE_ENV": "production",
         "DOTENV_CONFIG_PATH": ".env.production"
@@ -70,12 +70,12 @@ official: no
       "release": "25.0.0",
       "cpus": 8,
       "totalmem": 17179869184,
-      "freemem": 172376064
+      "freemem": 113688576
     },
     "git": {
       "branch": "main",
-      "commitShort": "7c40de8",
-      "commit": "7c40de818ee2e14305b360affd5b468af9fe097e",
+      "commitShort": "2d35321",
+      "commit": "2d3532149f7cef7f4b0b88432516277f65c0f526",
       "remote": "git@github.com:Samuellane522/auto-prompter.git",
       "worktreeDirty": false,
       "statusLines": []
@@ -95,7 +95,7 @@ official: no
   },
   "id": "03c82e6f2f",
   "entryAbs": "auto-prompter/main.user.js",
-  "finishedAt": "2025-10-25T21:02:30.434Z",
+  "finishedAt": "2025-10-25T21:10:16.717Z",
   "urls": {
     "ENC_URL": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
     "BOOT_URL": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
@@ -110,8 +110,8 @@ official: no
 ## Git
 {
   "branch": "main",
-  "commitShort": "7c40de8",
-  "commit": "7c40de818ee2e14305b360affd5b468af9fe097e",
+  "commitShort": "2d35321",
+  "commit": "2d3532149f7cef7f4b0b88432516277f65c0f526",
   "remote": "git@github.com:Samuellane522/auto-prompter.git",
   "worktreeDirty": false,
   "statusLines": []
@@ -154,7 +154,7 @@ official: no
     "/Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/bin/build/build.real.mjs"
   ],
   "cwd": "/Users/samuellane/Documents/GitHub/gpt_auto_prompter",
-  "uptimeSec": 0.052200459,
+  "uptimeSec": 0.056298167,
   "envHints": {
     "NODE_ENV": "production",
     "DOTENV_CONFIG_PATH": ".env.production"
@@ -169,7 +169,7 @@ official: no
   "release": "25.0.0",
   "cpus": 8,
   "totalmem": 17179869184,
-  "freemem": 172376064
+  "freemem": 113688576
 }
 
 ## Env (redacted)
@@ -199,14 +199,14 @@ official: no
 - PASS artifacts.encrypt.ok :: {"encBytes":29647}
 - PASS bootstrap.patched :: {"bootPath":"/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js","ENC_URL":"https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin","ENC_SRI":"sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="}
 - PASS bootstrap.verified :: {"bootPath":"/Users/samuellane/Documents/GitHub/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"}
-- PASS policy.sri set :: {"bootSri":"sha256-54NAUl9VJ5FYJtbO/9JpBk8V1c/TLxMb4RfE0Gxqm+Y=","encSri":"sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="}
+- PASS policy.sri set :: {"bootSri":"sha256-c/p0QaS4MDtldWM8VJklvPuRgyMWk248mDVDbZuKY3E=","encSri":"sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="}
 - PASS required files present :: {}
 
 ## Artifacts
-- bootstrap.user.js | ../GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js | 29.1 KiB | sha256=e78340525f5527915826d6ceffd269064f15d5cfd32f131be117c4d06c6a9be6 | https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js
 - enc.bin | ../GPT_auto_release/download/beta/auto-prompter-enc.bin | 29.0 KiB | sha256=c22cd619c3a1ff60394285059e50f9760cb3a1f540cd82d22f1b944458f69fef | https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin
-- policy.json | ../GPT_auto_release/download/beta/policy.json | 0.7 KiB | sha256=f42d49856708321b3ae0925b97be4cd23125b02c82ad1038ab39a648c957e3c9 | https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json
-- checksums.txt | ../GPT_auto_release/download/beta/checksums.txt | 0.2 KiB | sha256=dd7cc518b3314862e5fd15a4d0636358326a62834e83425985d53e3131cc1c9d | https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt
+- bootstrap.user.js | ../GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js | 29.1 KiB | sha256=73fa7441a4b8303b6575633c549925bcfb91832316936e3c9835436d9b8a6371 | https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js
+- policy.json | ../GPT_auto_release/download/beta/policy.json | 0.7 KiB | sha256=79796f5ef96ab36cb8abdaee7762c0adcac59a9d60634dfe32fecdfbbb456316 | https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json
+- checksums.txt | ../GPT_auto_release/download/beta/checksums.txt | 0.2 KiB | sha256=486cc713e0588024243ed450edc8a74de2179ae69eca817629d35a0c22f7b270 | https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt
 - key.json | ../GPT_auto_release/download/beta/key.json | 0.2 KiB | sha256=87f01e718efcc62ddcc0f22161b0d3d9050892ce2d42f5adb9a6c9e9f1045685 | https://samuellane522.github.io/GPT_auto_release/download/beta/key.json
 
 ## Release Tree
@@ -224,12 +224,12 @@ official: no
 📄 download/beta/policy.json (0.7 KiB)
 
 ## Steps
-- 2025-10-25T21:02:30.354Z :: resolve source entry & id :: {}
-- 2025-10-25T21:02:30.355Z :: write artifacts :: {}
-- 2025-10-25T21:02:30.361Z :: patch bootstrap with URL+SRI and verify :: {}
-- 2025-10-25T21:02:30.362Z :: checksums + policy (+SRI) after patch :: {}
-- 2025-10-25T21:02:30.363Z :: presence checks :: {}
-- 2025-10-25T21:02:30.363Z :: clean public tree :: {}
+- 2025-10-25T21:10:16.629Z :: resolve source entry & id :: {}
+- 2025-10-25T21:10:16.630Z :: write artifacts :: {}
+- 2025-10-25T21:10:16.635Z :: patch bootstrap with URL+SRI and verify :: {}
+- 2025-10-25T21:10:16.637Z :: checksums + policy (+SRI) after patch :: {}
+- 2025-10-25T21:10:16.639Z :: presence checks :: {}
+- 2025-10-25T21:10:16.639Z :: clean public tree :: {}
 
 ## Sidecar Files
 - report_html: /Users/samuellane/Documents/GitHub/gpt_auto_prompter/scripts/server/release/public/sanity/builds/03c82e6f2f.html
