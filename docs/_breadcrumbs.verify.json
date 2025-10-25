@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T03:47:29.226Z",
+  "generatedAt": "2025-10-25T03:47:33.798Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,13 +8,13 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "soft verify",
       "meta": {}
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 4,
+      "t": 3,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}
