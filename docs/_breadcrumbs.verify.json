@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T08:06:56.378Z",
+  "generatedAt": "2025-10-25T08:51:02.914Z",
   "crumbs": [
     {
       "t": 0,
@@ -92,13 +92,13 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.manifest.urls.enc",
       "meta": {
@@ -107,7 +107,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.manifest.urls.boot",
       "meta": {
@@ -116,7 +116,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 1,
       "level": "ok",
       "msg": "docs.manifest.urls.sums",
       "meta": {
@@ -131,25 +131,25 @@
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}

@@ -1,83 +1,53 @@
-
 <!doctype html>
 <html lang="en">
 <head>
+<style>:root{--bg:#0b0f14;--ink:#d1d5db;--muted:#9ca3af;--p:#2563eb;--panel:#111827}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial}
+a{color:#93c5fd;text-decoration:none}a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;background:rgba(10,14,20,.8);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid #111827}
+.topbar-inner{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;padding:12px 16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:28px;height:28px;border-radius:8px}
+.badge{color:var(--muted);font-size:12px}
+.nav{margin-left:auto;display:flex;gap:14px}
+.btn{border:1px solid #1f2937;border-radius:8px;padding:6px 10px;display:inline-block}
+.btn.primary{background:#1f2937}
+.main{max-width:1100px;margin:24px auto;padding:0 16px}
+.breadcrumbs{color:var(--muted);font-size:12px;margin-bottom:12px}
+footer{border-top:1px solid #111827;color:#6b7280;margin-top:40px;padding:16px 0;text-align:center}</style>
 
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="dark"/>
 <meta name="theme-color" content="#0b0f14"/>
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"/>
-<meta property="og:title" content="Verify Release"/>
+<meta property="og:title" content="Auto Prompter"/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="/assets/social-card.svg"/>
+<meta property="og:image" content="assets/social-card.svg"/>
 <meta property="og:site_name" content="Auto Prompter"/>
-<title>Verify Release</title>
-<style>
-:root{
-  --bg:#0b0f14; --bg-elev:#0f141b; --text:#e6edf3; --muted:#9aa7b2; --border:#1c2733;
-  --accent:#4F9CFF; --accent-2:#0AEFFF; --success:#34C759; --danger:#ff6b6b;
-  --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.28);
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,Segoe UI,Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
-main{max-width:880px;margin:0 auto;padding:28px 18px}
-code,pre{background:#0f1720;border:1px solid var(--border);border-radius:12px}
-pre{padding:14px 16px;overflow:auto}
-hr{border:none;border-top:1px solid var(--border);margin:24px 0}
-.card{background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px}
-.kbd{font:12px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;background:#0f1720;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
-.btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(180deg,#1a2a3b,#0f1720);color:var(--text);text-decoration:none}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{border-color:#1b2a3a}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#0f1720;color:var(--muted);font-size:12px}
-.topbar{position:sticky;top:0;z-index:20;background:rgba(11,15,20,.8);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--border)}
-.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:1000px;margin:0 auto;padding:10px 14px}
-.brand{display:flex;align-items:center;gap:10px}
-.brand img{width:28px;height:28px;border-radius:8px}
-.nav{display:flex;gap:16px}
-.nav a{color:var(--muted);text-decoration:none}
-.nav a:hover{color:var(--text)}
-.footer{max-width:880px;margin:40px auto 60px;padding:0 18px;color:var(--muted);font-size:13px}
-.copy{position:relative}
-.copy button{position:absolute;top:8px;right:8px}
-blockquote{margin:0;padding:12px 14px;border-left:3px solid var(--accent);background:#0f1720;border-radius:10px}
-table{width:100%;border-collapse:separate;border-spacing:0;margin:8px 0 18px}
-th,td{padding:10px 12px;border-bottom:1px solid var(--border);text-align:left}
-thead th{color:var(--muted);font-weight:600;border-bottom:1px solid var(--border)}
-h1,h2,h3{letter-spacing:.2px}
-h1{font-size:36px;line-height:1.15;margin:16px 0 6px}
-h2{font-size:28px;margin:16px 0 8px}
-h3{font-size:20px;margin:14px 0 6px}
-</style>
-
+<title>Auto Prompter</title>
 </head>
 <body>
-  
+
 <header class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      
-<picture>
-  <source srcset="/assets/logo.png" type="image/png"/>
-  <img src="/assets/logo.svg" alt="Auto Prompter logo" width="28" height="28" />
-</picture>
-      <strong>Auto Prompter</strong>
+      <img src="assets/logo.png" alt="Verify Release logo" onerror="(function(el){try{console.warn(JSON.stringify({level:'WARN',component:'layout',op:'logo',version:'v2025.1025.r4',AP_LOAD:'docs.ui.layout',reason:'assets/logo.png not found or failed to load',href:location.href,userAgent:navigator.userAgent}))}catch(_){};el&&el.remove()})(this)" />
+      <strong>Verify Release</strong>
       <span class="badge">Build: <code>current</code></span>
     </div>
     <nav class="nav">
-      <a href="/index.html">Home</a>
-      <a href="/install.html">Install</a>
-      <a href="/verify.html">Verify</a>
-      <a href="/releases.html">Releases</a>
-      <a href="/changelog.html">Changelog</a>
+      <a href="/index.html">Docs</a>
+      
     </nav>
-    <a class="btn primary" href="#">Install</a>
+    
   </div>
 </header>
-  <main>
-    
+<main class="main">
+  <div class="breadcrumbs"><a href="./index.html">Docs</a> / <a href="./verify.html">Verify</a></div>
+  <h1>Verify Release</h1>
+  <p class="subtitle">Compare published checksums against your local artifacts</p>
+  <p class="desc">Verify Auto Prompter releases with published SHA-256 checksums and integrity policy.</p>
+  
 <div class="card">
   <h2>Verify checksums (hex sha256)</h2>
   <p>We publish <span class="mono">checksums.txt</span>. Compare the values below.</p>
@@ -128,23 +98,7 @@ h3{font-size:20px;margin:14px 0 6px}
 })();
 </script>
 
-  </main>
-  
-<footer class="footer">
-  <div>© 2025 Auto Prompter • Build <code>current</code> • enc SRI <code>n/a</code></div>
-</footer>
-  
-<script type="module">
-  const q=(s,el=document)=>el.querySelector(s); const qa=(s,el=document)=>Array.from(el.querySelectorAll(s));
-  qa('pre').forEach((pre)=>{
-    const wrap=document.createElement('div'); wrap.className='copy';
-    const btn=document.createElement('button'); btn.className='btn'; btn.textContent='Copy';
-    btn.onclick=async()=>{ try{
-      const text=pre.textContent; await navigator.clipboard.writeText(text);
-      btn.textContent='Copied'; setTimeout(()=>btn.textContent='Copy',1200);
-    }catch(e){ btn.textContent='Error'; setTimeout(()=>btn.textContent='Copy',1200); } };
-    pre.parentNode.insertBefore(wrap, pre); wrap.appendChild(pre); wrap.appendChild(btn);
-  });
-</script>
+</main>
+<footer><small>© 2025 Auto Prompter — docs</small></footer>
 </body>
 </html>
