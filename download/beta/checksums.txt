@@ -1,2 +1,2 @@
 c22cd619c3a1ff60394285059e50f9760cb3a1f540cd82d22f1b944458f69fef  download/beta/auto-prompter-enc.bin
-65a6ba4b239152ca3539bca7d9bb685988911d56c32cd39fbbde8e4c517b105b  beta-release/current/boot/auto-prompter-bootstrap.user.js
+13689c4b43f9ecb52b4195c60e4daa293cd7e638dc8d5dba0717aaea3cafd444  beta-release/current/boot/auto-prompter-bootstrap.user.js
