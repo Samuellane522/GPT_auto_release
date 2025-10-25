@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T21:10:22.817Z",
+  "generatedAt": "2025-10-25T21:24:28.058Z",
   "crumbs": [
     {
       "t": 0,
@@ -125,37 +125,37 @@
       }
     },
     {
-      "t": 2,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 4,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 5,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 5,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
@@ -171,13 +171,13 @@
       }
     },
     {
-      "t": 3,
+      "t": 6,
       "level": "ok",
       "msg": "docs.health.ok",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 6,
       "level": "ok",
       "msg": "docs.versioned.snapshot",
       "meta": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 8,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}

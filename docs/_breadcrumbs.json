@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2025-10-25T21:10:20.195Z",
+  "generatedAt": "2025-10-25T21:24:25.709Z",
   "crumbs": [
     {
-      "t": 19,
+      "t": 20,
       "level": "step",
       "msg": "load config",
       "meta": {}
     },
     {
-      "t": 19,
+      "t": 20,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
@@ -20,13 +20,13 @@
       "meta": {}
     },
     {
-      "t": 20,
+      "t": 21,
       "level": "step",
       "msg": "read policy/integrity",
       "meta": {}
     },
     {
-      "t": 20,
+      "t": 21,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
@@ -50,7 +50,7 @@
       "meta": {}
     },
     {
-      "t": 24,
+      "t": 25,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
@@ -68,19 +68,19 @@
       "meta": {}
     },
     {
-      "t": 38,
+      "t": 37,
       "level": "step",
       "msg": "assets: brand (logo/favicon/social)",
       "meta": {}
     },
     {
-      "t": 41,
+      "t": 40,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 42,
+      "t": 41,
       "level": "step",
       "msg": "mirror sanity build logs",
       "meta": {}
