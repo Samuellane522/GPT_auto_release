@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T08:51:02.914Z",
+  "generatedAt": "2025-10-25T08:51:05.527Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,7 +8,7 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
@@ -60,7 +60,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file._data.json",
       "meta": {
@@ -68,7 +68,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file._health.json",
       "meta": {
@@ -76,7 +76,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file.sitemap.xml",
       "meta": {
@@ -84,7 +84,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.file.robots.txt",
       "meta": {
@@ -92,13 +92,13 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.present",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.enc",
       "meta": {
@@ -107,7 +107,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.boot",
       "meta": {
@@ -116,7 +116,7 @@
       }
     },
     {
-      "t": 1,
+      "t": 2,
       "level": "ok",
       "msg": "docs.manifest.urls.sums",
       "meta": {
@@ -125,31 +125,31 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
