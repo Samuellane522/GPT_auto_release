@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T03:54:11.683Z",
+  "generatedAt": "2025-10-25T03:54:15.563Z",
   "crumbs": [
     {
       "t": 0,
@@ -14,7 +14,7 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "soft verify",
       "meta": {}
@@ -155,7 +155,7 @@
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
@@ -171,13 +171,13 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.health.ok",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.versioned.snapshot",
       "meta": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs verified",
       "meta": {}
