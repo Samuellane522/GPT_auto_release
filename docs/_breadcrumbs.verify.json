@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-24T22:42:35.095Z",
+  "generatedAt": "2025-10-24T22:53:07.471Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,7 +8,7 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
@@ -125,7 +125,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
