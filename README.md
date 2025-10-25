@@ -56,12 +56,12 @@ curl -sSfL  | sed -n '1,60p'
 ## Architecture
 ```mermaid
 flowchart LR
-  U((User)) --> B[Bootstrap userscript]
-  B --> P[policy.json (SRI)]
-  B --> E[enc.bin (encrypted)]
-  P --> V[Checksums verify]
-  E --> D[Decrypt & load]
-  D --> A[Auto Prompter]
+  U((User)) --> B["Bootstrap userscript"];
+  B --> P["policy.json (SRI)"];
+  B --> E["enc.bin (encrypted)"];
+  P --> V["Checksums verify"];
+  E --> D["Decrypt & load"];
+  D --> A["Auto Prompter"];
 ```
 
 <details>
