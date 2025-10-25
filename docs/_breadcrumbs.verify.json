@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T03:47:33.798Z",
+  "generatedAt": "2025-10-25T03:54:11.683Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,13 +8,13 @@
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 1,
+      "t": 0,
       "level": "step",
       "msg": "soft verify",
       "meta": {}
@@ -125,31 +125,31 @@
       }
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 3,
+      "t": 2,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
