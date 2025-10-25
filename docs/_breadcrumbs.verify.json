@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-25T21:02:33.807Z",
+  "generatedAt": "2025-10-25T21:02:36.771Z",
   "crumbs": [
     {
       "t": 0,
@@ -8,13 +8,13 @@
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "resolve paths",
       "meta": {}
     },
     {
-      "t": 0,
+      "t": 1,
       "level": "step",
       "msg": "soft verify",
       "meta": {}
@@ -125,37 +125,37 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasBOOT",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.index.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.install.hasENC",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.html.verify.hasSUMS",
       "meta": {}
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.sums.enc.bin.entry",
       "meta": {
@@ -163,7 +163,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.sums.boot.entry",
       "meta": {
@@ -171,7 +171,7 @@
       }
     },
     {
-      "t": 2,
+      "t": 3,
       "level": "ok",
       "msg": "docs.health.ok",
       "meta": {}
