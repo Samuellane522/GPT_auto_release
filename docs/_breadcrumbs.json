@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-27T16:25:34.241Z",
+  "generatedAt": "2025-10-27T16:40:15.450Z",
   "crumbs": [
     {
       "t": 0,
@@ -27,12 +27,12 @@
       "meta": {}
     },
     {
-      "t": 4,
+      "t": 5,
       "level": "ok",
       "msg": "enc.presence",
       "meta": {
         "encSri": "sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8=",
-        "bootSri": "sha256-E5FX0nzpqxVdrlvObRvGgk/prbeyS49waQYfN6LZpbQ=",
+        "bootSri": "sha256-2YJBSaJXdvrWgB8gHI2od0hqMfaCtY+v52FmXMG0ceI=",
         "encUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
         "bootUrl": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
         "keyUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/key.json",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "t": 4,
+      "t": 5,
       "level": "ok",
       "msg": "enc.size",
       "meta": {
@@ -89,7 +89,7 @@
       }
     },
     {
-      "t": 7,
+      "t": 8,
       "level": "ok",
       "msg": "asset.enc.bin.minSize",
       "meta": {
@@ -98,87 +98,87 @@
       }
     },
     {
-      "t": 13,
+      "t": 14,
       "level": "step",
       "msg": "discover latest id",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 14,
       "level": "step",
       "msg": "ensure docs dir",
       "meta": {}
     },
     {
-      "t": 13,
+      "t": 15,
       "level": "step",
       "msg": "write manifest",
       "meta": {}
     },
     {
-      "t": 15,
+      "t": 17,
       "level": "step",
       "msg": "render core pages",
       "meta": {}
     },
     {
-      "t": 16,
+      "t": 19,
       "level": "step",
       "msg": "render releases index (if present)",
       "meta": {}
     },
     {
-      "t": 17,
+      "t": 20,
       "level": "step",
       "msg": "generate changelog",
       "meta": {}
     },
     {
-      "t": 28,
+      "t": 34,
       "level": "step",
       "msg": "ancillary: sitemap/robots + health + assets",
       "meta": {}
     },
     {
-      "t": 31,
+      "t": 39,
       "level": "step",
       "msg": "assets: brand (logo/favicon/social)",
       "meta": {}
     },
     {
-      "t": 35,
+      "t": 42,
       "level": "step",
       "msg": "snapshot versioned docs",
       "meta": {}
     },
     {
-      "t": 36,
+      "t": 44,
       "level": "step",
       "msg": "mirror sanity build logs",
       "meta": {}
     },
     {
-      "t": 93446,
+      "t": 92322,
       "level": "warn",
-      "msg": "{\"level\":\"WARN\",\"component\":\"docs.live\",\"event\":\"wait:timeout\",\"elapsedMs\":93405,\"health\":\"https://samuellane522.github.io/GPT_auto_release/docs/_health.json\",\"indexUrl\":\"https://samuellane522.github.io/GPT_auto_release/docs/index.html\"}",
+      "msg": "{\"level\":\"WARN\",\"component\":\"docs.live\",\"event\":\"wait:timeout\",\"elapsedMs\":92271,\"health\":\"https://samuellane522.github.io/GPT_auto_release/docs/_health.json\",\"indexUrl\":\"https://samuellane522.github.io/GPT_auto_release/docs/index.html\"}",
       "meta": {}
     },
     {
-      "t": 93446,
+      "t": 92322,
       "level": "warn",
       "msg": "waitForPages: continuing despite TIMEOUT",
       "meta": {
         "ok": false,
-        "elapsedMs": 93405,
+        "elapsedMs": 92271,
         "reason": "TIMEOUT"
       }
     },
     {
-      "t": 93446,
+      "t": 92322,
       "level": "ok",
       "msg": "wrote docs (build=03c82e6f2f)",
       "meta": {
-        "duration_ms": 93446,
+        "duration_ms": 92322,
         "latestId": "03c82e6f2f"
       }
     }
