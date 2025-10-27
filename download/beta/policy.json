@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "createdAt": "2025-10-26T22:19:27.395Z",
+  "createdAt": "2025-10-27T02:06:12.102Z",
   "encMode": "embedded",
   "publicBase": "https://samuellane522.github.io/GPT_auto_release",
   "downloadPrefix": "/download/beta",
@@ -14,7 +14,7 @@
   "encUrl": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
   "nextBootstrapUrl": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js",
   "integrity": {
-    "boot": "sha256-wYgfNZz5UIHnks8SJ3Wh6pgKV9Ta7K5uGxlHsJc+lLY=",
+    "boot": "sha256-fkZc/PYkR4z7sei2i2brZyNmwcYEJHk4YJjWMEwwdMQ=",
     "enc": "sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="
   }
 }
