@@ -3,7 +3,7 @@
   "buildsDir": "<path>",
   "repoRoot": "<path>",
   "meta": {
-    "startedAt": "2025-10-27T16:38:39.355Z",
+    "startedAt": "2025-10-27T16:54:31.504Z",
     "buildlogVersion": "5.2.1",
     "repoRoot": "<path>",
     "outDir": "<path>",
@@ -58,7 +58,7 @@
           "/Users/<redacted>"
         ],
         "cwd": "<path>",
-        "uptimeSec": 0.111455917,
+        "uptimeSec": 0.100517333,
         "envHints": {
           "NODE_ENV": "production",
           "DOTENV_CONFIG_PATH": ".env.production"
@@ -71,11 +71,11 @@
         "release": "25.0.0",
         "cpus": 8,
         "totalmem": 17179869184,
-        "freemem": 262602752
+        "freemem": 135790592
       },
       "git": {
         "branch": "main",
-        "commitShort": "cc281c2",
+        "commitShort": "716c9e4",
         "commit": "<hex>",
         "remote": "<git-remote>",
         "worktreeDirty": false,
@@ -102,7 +102,7 @@
     },
     "id": "03c82e6f2f",
     "entryAbs": "auto-prompter/main.user.js",
-    "finishedAt": "2025-10-27T16:38:39.498Z"
+    "finishedAt": "2025-10-27T16:54:31.618Z"
   },
   "urls": {
     "enc": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin",
@@ -113,7 +113,7 @@
   },
   "steps": [
     {
-      "t": "2025-10-27T16:38:39.366Z",
+      "t": "2025-10-27T16:54:31.517Z",
       "name": "links.recorded",
       "details": {
         "urls": {
@@ -126,39 +126,39 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.367Z",
+      "t": "2025-10-27T16:54:31.518Z",
       "name": "resolve source entry & id",
       "details": {}
     },
     {
-      "t": "2025-10-27T16:38:39.368Z",
+      "t": "2025-10-27T16:54:31.519Z",
       "name": "write artifacts",
       "details": {}
     },
     {
-      "t": "2025-10-27T16:38:39.372Z",
+      "t": "2025-10-27T16:54:31.525Z",
       "name": "patch bootstrap with URL+SRI and verify",
       "details": {}
     },
     {
-      "t": "2025-10-27T16:38:39.374Z",
+      "t": "2025-10-27T16:54:31.527Z",
       "name": "checksums + policy (+SRI) after patch",
       "details": {}
     },
     {
-      "t": "2025-10-27T16:38:39.376Z",
+      "t": "2025-10-27T16:54:31.529Z",
       "name": "presence checks",
       "details": {}
     },
     {
-      "t": "2025-10-27T16:38:39.376Z",
+      "t": "2025-10-27T16:54:31.529Z",
       "name": "clean public tree",
       "details": {}
     }
   ],
   "checks": [
     {
-      "t": "2025-10-27T16:38:39.366Z",
+      "t": "2025-10-27T16:54:31.517Z",
       "name": "config.summary",
       "ok": true,
       "details": {
@@ -170,7 +170,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.366Z",
+      "t": "2025-10-27T16:54:31.517Z",
       "name": "config.publicBase.absolute_url",
       "ok": true,
       "details": {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.366Z",
+      "t": "2025-10-27T16:54:31.517Z",
       "name": "enc.cspSafeConflict",
       "ok": true,
       "details": {
@@ -187,7 +187,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.368Z",
+      "t": "2025-10-27T16:54:31.520Z",
       "name": "artifacts.config",
       "ok": true,
       "details": {
@@ -201,7 +201,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.372Z",
+      "t": "2025-10-27T16:54:31.525Z",
       "name": "artifacts.encrypt.ok",
       "ok": true,
       "details": {
@@ -209,7 +209,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.373Z",
+      "t": "2025-10-27T16:54:31.526Z",
       "name": "bootstrap.patched",
       "ok": true,
       "details": {
@@ -219,7 +219,7 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.374Z",
+      "t": "2025-10-27T16:54:31.527Z",
       "name": "bootstrap.verified",
       "ok": true,
       "details": {
@@ -227,16 +227,16 @@
       }
     },
     {
-      "t": "2025-10-27T16:38:39.376Z",
+      "t": "2025-10-27T16:54:31.529Z",
       "name": "policy.sri set",
       "ok": true,
       "details": {
-        "bootSri": "sha256-2YJBSaJXdvrWgB8gHI2od0hqMfaCtY+v52FmXMG0ceI=",
+        "bootSri": "sha256-usbsu6OPDBngv3vVOwf4jomJsQhDcRvGbfdf270mjIQ=",
         "encSri": "sha256-wizWGcOh/2A5QoUFnlD5dgyzofVAzYLSLxuURFj2n+8="
       }
     },
     {
-      "t": "2025-10-27T16:38:39.376Z",
+      "t": "2025-10-27T16:54:31.529Z",
       "name": "required files present",
       "ok": true,
       "details": {}
@@ -244,11 +244,11 @@
   ],
   "files": [
     {
-      "label": "enc.bin",
+      "label": "bootstrap.user.js",
       "path": "<path>",
-      "size": 29647,
+      "size": 29843,
       "sha256": "<hex>",
-      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin"
+      "url": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
     },
     {
       "label": "policy.json",
@@ -258,18 +258,18 @@
       "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/policy.json"
     },
     {
-      "label": "bootstrap.user.js",
-      "path": "<path>",
-      "size": 29843,
-      "sha256": "<hex>",
-      "url": "https://samuellane522.github.io/GPT_auto_release/beta-release/current/boot/auto-prompter-bootstrap.user.js"
-    },
-    {
       "label": "checksums.txt",
       "path": "<path>",
       "size": 226,
       "sha256": "<hex>",
       "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/checksums.txt"
+    },
+    {
+      "label": "enc.bin",
+      "path": "<path>",
+      "size": 29647,
+      "sha256": "<hex>",
+      "url": "https://samuellane522.github.io/GPT_auto_release/download/beta/auto-prompter-enc.bin"
     },
     {
       "label": "current/pkg/auto-prompter-enc.bin",
@@ -349,5 +349,5 @@
     "totalChecks": 9,
     "pass": true
   },
-  "finishedAt": "2025-10-27T16:38:39.498Z"
+  "finishedAt": "2025-10-27T16:54:31.618Z"
 }
